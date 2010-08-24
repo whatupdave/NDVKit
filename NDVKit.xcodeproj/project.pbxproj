@@ -90,7 +90,7 @@
 				D885D82A1223BC4700F31913 /* Categories */,
 				D885D82F1223BCBA00F31913 /* NDVKit.h */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -104,6 +104,7 @@
 		D885D82A1223BC4700F31913 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				D885D82B1223BC6C00F31913 /* NDVCategories.h */,
 				D885D7BD1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h */,
 				D885D7BE1223A7D300F31913 /* NSDate+NDVCalendarAdditions.m */,
 				D885D7FA1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h */,
@@ -114,7 +115,6 @@
 				D885D8031223B1E200F31913 /* NSString+NDVAdditions.m */,
 				D885D8201223B72700F31913 /* UIImage+NDVAdditions.h */,
 				D885D8211223B72700F31913 /* UIImage+NDVAdditions.m */,
-				D885D82B1223BC6C00F31913 /* NDVCategories.h */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
