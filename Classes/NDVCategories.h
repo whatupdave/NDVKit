@@ -17,3 +17,6 @@
 #import "UIView+NDVAdditions.h"
 #import "UIImage+NDVAdditions.h"
 #import "UINavigationController+NDVAdditions.h"
+
+// QuartzCore
+#import "CAGradientLayer+NDVShadowLayer.h"

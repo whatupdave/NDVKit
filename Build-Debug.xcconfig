@@ -6,7 +6,7 @@
 //  Copyright 2010 Nathan de Vries. All rights reserved.
 //
 
-#include "Shared.xcconfig"
+#include "Build-Shared.xcconfig"
 
 
 COPY_PHASE_STRIP = NO
