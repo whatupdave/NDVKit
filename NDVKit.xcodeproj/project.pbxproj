@@ -29,6 +29,8 @@
 		D885DA7C1225027600F31913 /* NDVDebuggingMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA7B1225027600F31913 /* NDVDebuggingMacros.h */; };
 		D885DA8F1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA8D1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.h */; };
 		D885DA901225059700F31913 /* CAGradientLayer+NDVShadowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DA8E1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.m */; };
+		D885DB3E12254F3000F31913 /* CGImage+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DB3C12254F3000F31913 /* CGImage+NDVAdditions.h */; };
+		D885DB3F12254F3000F31913 /* CGImage+NDVAdditions.c in Sources */ = {isa = PBXBuildFile; fileRef = D885DB3D12254F3000F31913 /* CGImage+NDVAdditions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		D885DA7B1225027600F31913 /* NDVDebuggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVDebuggingMacros.h; sourceTree = "<group>"; };
 		D885DA8D1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+NDVShadowAdditions.h"; sourceTree = "<group>"; };
 		D885DA8E1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAGradientLayer+NDVShadowAdditions.m"; sourceTree = "<group>"; };
+		D885DB3C12254F3000F31913 /* CGImage+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImage+NDVAdditions.h"; sourceTree = "<group>"; };
+		D885DB3D12254F3000F31913 /* CGImage+NDVAdditions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "CGImage+NDVAdditions.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D885D82B1223BC6C00F31913 /* NDVCategories.h */,
+				D885DB4D12254FFE00F31913 /* CoreGraphics */,
 				D885DA951225066B00F31913 /* Foundation */,
 				D885DA961225068000F31913 /* UIKit */,
 				D885DAD9122507CB00F31913 /* QuartzCore */,
@@ -168,6 +173,15 @@
 			name = QuartzCore;
 			sourceTree = "<group>";
 		};
+		D885DB4D12254FFE00F31913 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				D885DB3C12254F3000F31913 /* CGImage+NDVAdditions.h */,
+				D885DB3D12254F3000F31913 /* CGImage+NDVAdditions.c */,
+			);
+			name = CoreGraphics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -189,6 +203,7 @@
 				D885DA741225014300F31913 /* NDVSynthesizeKVOHelpers.h in Headers */,
 				D885DA7C1225027600F31913 /* NDVDebuggingMacros.h in Headers */,
 				D885DA8F1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.h in Headers */,
+				D885DB3E12254F3000F31913 /* CGImage+NDVAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +258,7 @@
 				D885DA4A1224FAD000F31913 /* UINavigationController+NDVAdditions.m in Sources */,
 				D885DA621224FC6400F31913 /* UIView+NDVAdditions.m in Sources */,
 				D885DA901225059700F31913 /* CAGradientLayer+NDVShadowAdditions.m in Sources */,
+				D885DB3F12254F3000F31913 /* CGImage+NDVAdditions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

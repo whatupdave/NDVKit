@@ -20,3 +20,6 @@
 
 // QuartzCore
 #import "CAGradientLayer+NDVShadowLayer.h"
+
+// CoreGraphics
+#import "CGImage+NDVAdditions.h"
