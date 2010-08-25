@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AA747D9F0F9514B9006C5449 /* NDVKit_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* NDVKit_Prefix.pch */; };
-		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		D885D7BF1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D7BD1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h */; };
 		D885D7C01223A7D300F31913 /* NSDate+NDVCalendarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885D7BE1223A7D300F31913 /* NSDate+NDVCalendarAdditions.m */; };
 		D885D7FC1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D7FA1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h */; };
@@ -21,12 +20,10 @@
 		D885D8231223B72700F31913 /* UIImage+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885D8211223B72700F31913 /* UIImage+NDVAdditions.m */; };
 		D885D82C1223BC6C00F31913 /* NDVCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D82B1223BC6C00F31913 /* NDVCategories.h */; };
 		D885D8301223BCBA00F31913 /* NDVKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D82F1223BCBA00F31913 /* NDVKit.h */; };
-		D885D83A1223BD1900F31913 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D885D8391223BD1900F31913 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA747D9E0F9514B9006C5449 /* NDVKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVKit_Prefix.pch; sourceTree = SOURCE_ROOT; };
-		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libNDVKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNDVKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D885D7BD1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NDVCalendarAdditions.h"; sourceTree = "<group>"; };
 		D885D7BE1223A7D300F31913 /* NSDate+NDVCalendarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NDVCalendarAdditions.m"; sourceTree = "<group>"; };
@@ -40,7 +37,9 @@
 		D885D8211223B72700F31913 /* UIImage+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NDVAdditions.m"; sourceTree = "<group>"; };
 		D885D82B1223BC6C00F31913 /* NDVCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVCategories.h; sourceTree = "<group>"; };
 		D885D82F1223BCBA00F31913 /* NDVKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVKit.h; sourceTree = "<group>"; };
-		D885D8391223BD1900F31913 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D885D94C1224EE6300F31913 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		D885D94D1224EE6300F31913 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		D885D94E1224EE6300F31913 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
-				D885D83A1223BD1900F31913 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,19 +66,10 @@
 			children = (
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
-				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				D885D8391223BD1900F31913 /* UIKit.framework */,
+				D885D94B1224EE4100F31913 /* Build Configurations */,
 			);
 			name = NDVKit;
-			sourceTree = "<group>";
-		};
-		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
@@ -117,6 +105,16 @@
 				D885D8211223B72700F31913 /* UIImage+NDVAdditions.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		D885D94B1224EE4100F31913 /* Build Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				D885D94C1224EE6300F31913 /* Debug.xcconfig */,
+				D885D94D1224EE6300F31913 /* Release.xcconfig */,
+				D885D94E1224EE6300F31913 /* Shared.xcconfig */,
+			);
+			name = "Build Configurations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,33 +191,15 @@
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D885D94C1224EE6300F31913 /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/NDVKit.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = NDVKit_Prefix.pch;
-				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = NDVKit;
 			};
 			name = Debug;
 		};
 		1DEB922008733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D885D94E1224EE6300F31913 /* Shared.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				DSTROOT = /tmp/NDVKit.dst;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = NDVKit_Prefix.pch;
-				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = NDVKit;
 			};
 			name = Release;
 		};

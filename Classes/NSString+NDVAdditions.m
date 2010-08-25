@@ -15,8 +15,8 @@
 
 - (BOOL)isWhitespace {
   NSCharacterSet* whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-  for (NSInteger index = 0; index < self.length; ++index) {
-    unichar character = [self characterAtIndex:index];
+  for (NSInteger i = 0; i < self.length; i++) {
+    unichar character = [self characterAtIndex:i];
     if (![whitespace characterIsMember:character]) {
       return NO;
     }
@@ -56,8 +56,8 @@
 	CC_MD5([data bytes], [data length], hashData);
 
 	NSMutableString* hashString = [NSMutableString string];
-	for (NSUInteger index = 0; index < CC_MD5_DIGEST_LENGTH; index++) {
-    [hashString appendFormat:@"%02x", hashData[index]];
+	for (NSUInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+    [hashString appendFormat:@"%02x", hashData[i]];
   }
 
 	return hashString;

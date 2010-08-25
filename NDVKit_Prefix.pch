@@ -1,7 +1,8 @@
 //
-// Prefix header for all source files of the 'CocoaTouchStaticLibrary' target in the 'CocoaTouchStaticLibrary' project.
+// Prefix header for all source files of the 'NDVKit' target in the 'NDVKit' project.
 //
 
 #ifdef __OBJC__
-  #import "NDVKit.h"
+  #import <Foundation/Foundation.h>
+  #import <UIKit/UIKit.h>
 #endif

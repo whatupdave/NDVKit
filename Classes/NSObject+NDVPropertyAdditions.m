@@ -19,8 +19,8 @@
 
   NSMutableArray* allPropertyNames = [NSMutableArray arrayWithCapacity:propertiesCount];
 
-  for (NSUInteger index = 0; index < propertiesCount; index++) {
-    objc_property_t property = propertyList[index];
+  for (NSUInteger i = 0; i < propertiesCount; i++) {
+    objc_property_t property = propertyList[i];
     const char* propertyName = property_getName(property);
 
     if (propertyName) {
