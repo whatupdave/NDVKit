@@ -1,0 +1,9 @@
+//
+//  Build-Release.xcconfig
+//  NDVKit
+//
+//  Created by Nathan de Vries on 25/08/10.
+//  Copyright 2010 Nathan de Vries. All rights reserved.
+//
+
+#include "Build-Shared.xcconfig"

@@ -1,5 +1,5 @@
 //
-//  Release.xcconfig
+//  Build-Debug.xcconfig
 //  NDVKit
 //
 //  Created by Nathan de Vries on 25/08/10.
@@ -7,3 +7,10 @@
 //
 
 #include "Shared.xcconfig"
+
+
+COPY_PHASE_STRIP = NO
+
+GCC_ENABLE_FIX_AND_CONTINUE = YES
+GCC_DYNAMIC_NO_PIC = NO
+GCC_OPTIMIZATION_LEVEL = 0

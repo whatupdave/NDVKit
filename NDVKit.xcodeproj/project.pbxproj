@@ -44,9 +44,9 @@
 		D885D8211223B72700F31913 /* UIImage+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NDVAdditions.m"; sourceTree = "<group>"; };
 		D885D82B1223BC6C00F31913 /* NDVCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVCategories.h; sourceTree = "<group>"; };
 		D885D82F1223BCBA00F31913 /* NDVKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVKit.h; sourceTree = "<group>"; };
-		D885D94C1224EE6300F31913 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		D885D94D1224EE6300F31913 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		D885D94E1224EE6300F31913 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		D885D94C1224EE6300F31913 /* Build-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Build-Debug.xcconfig"; sourceTree = "<group>"; };
+		D885D94D1224EE6300F31913 /* Build-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Build-Release.xcconfig"; sourceTree = "<group>"; };
+		D885D94E1224EE6300F31913 /* Build-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Build-Shared.xcconfig"; sourceTree = "<group>"; };
 		D885DA471224FAD000F31913 /* UINavigationController+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NDVAdditions.h"; sourceTree = "<group>"; };
 		D885DA481224FAD000F31913 /* UINavigationController+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NDVAdditions.m"; sourceTree = "<group>"; };
 		D885DA5F1224FC6400F31913 /* UIView+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NDVAdditions.h"; sourceTree = "<group>"; };
@@ -131,9 +131,9 @@
 		D885D94B1224EE4100F31913 /* Build Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				D885D94C1224EE6300F31913 /* Debug.xcconfig */,
-				D885D94D1224EE6300F31913 /* Release.xcconfig */,
-				D885D94E1224EE6300F31913 /* Shared.xcconfig */,
+				D885D94C1224EE6300F31913 /* Build-Debug.xcconfig */,
+				D885D94D1224EE6300F31913 /* Build-Release.xcconfig */,
+				D885D94E1224EE6300F31913 /* Build-Shared.xcconfig */,
 			);
 			name = "Build Configurations";
 			sourceTree = "<group>";
@@ -219,14 +219,14 @@
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D885D94C1224EE6300F31913 /* Debug.xcconfig */;
+			baseConfigurationReference = D885D94C1224EE6300F31913 /* Build-Debug.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		1DEB922008733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D885D94E1224EE6300F31913 /* Shared.xcconfig */;
+			baseConfigurationReference = D885D94D1224EE6300F31913 /* Build-Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
