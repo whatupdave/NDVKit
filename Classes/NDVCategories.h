@@ -14,4 +14,6 @@
 #import "NSDateFormatter+NDVAdditions.h"
 
 // UIKit
+#import "UIView+NDVAdditions.h"
 #import "UIImage+NDVAdditions.h"
+#import "UINavigationController+NDVAdditions.h"

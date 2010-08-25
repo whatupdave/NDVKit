@@ -8,3 +8,6 @@
 
 
 #import "NDVCategories.h"
+#import "NDVSynthesizeSingleton.h"
+#import "NDVSynthesizeKVOHelpers.h"
+#import "NDVDebuggingMacros.h"

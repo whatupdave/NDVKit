@@ -20,6 +20,13 @@
 		D885D8231223B72700F31913 /* UIImage+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885D8211223B72700F31913 /* UIImage+NDVAdditions.m */; };
 		D885D82C1223BC6C00F31913 /* NDVCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D82B1223BC6C00F31913 /* NDVCategories.h */; };
 		D885D8301223BCBA00F31913 /* NDVKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D82F1223BCBA00F31913 /* NDVKit.h */; };
+		D885DA491224FAD000F31913 /* UINavigationController+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA471224FAD000F31913 /* UINavigationController+NDVAdditions.h */; };
+		D885DA4A1224FAD000F31913 /* UINavigationController+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DA481224FAD000F31913 /* UINavigationController+NDVAdditions.m */; };
+		D885DA611224FC6400F31913 /* UIView+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA5F1224FC6400F31913 /* UIView+NDVAdditions.h */; };
+		D885DA621224FC6400F31913 /* UIView+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DA601224FC6400F31913 /* UIView+NDVAdditions.m */; };
+		D885DA701224FE9600F31913 /* NDVSynthesizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA6F1224FE9600F31913 /* NDVSynthesizeSingleton.h */; };
+		D885DA741225014300F31913 /* NDVSynthesizeKVOHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA731225014300F31913 /* NDVSynthesizeKVOHelpers.h */; };
+		D885DA7C1225027600F31913 /* NDVDebuggingMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA7B1225027600F31913 /* NDVDebuggingMacros.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +47,13 @@
 		D885D94C1224EE6300F31913 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		D885D94D1224EE6300F31913 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		D885D94E1224EE6300F31913 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		D885DA471224FAD000F31913 /* UINavigationController+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NDVAdditions.h"; sourceTree = "<group>"; };
+		D885DA481224FAD000F31913 /* UINavigationController+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NDVAdditions.m"; sourceTree = "<group>"; };
+		D885DA5F1224FC6400F31913 /* UIView+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NDVAdditions.h"; sourceTree = "<group>"; };
+		D885DA601224FC6400F31913 /* UIView+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NDVAdditions.m"; sourceTree = "<group>"; };
+		D885DA6F1224FE9600F31913 /* NDVSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVSynthesizeSingleton.h; sourceTree = "<group>"; };
+		D885DA731225014300F31913 /* NDVSynthesizeKVOHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVSynthesizeKVOHelpers.h; sourceTree = "<group>"; };
+		D885DA7B1225027600F31913 /* NDVDebuggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVDebuggingMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,9 @@
 			children = (
 				D885D82A1223BC4700F31913 /* Categories */,
 				D885D82F1223BCBA00F31913 /* NDVKit.h */,
+				D885DA6F1224FE9600F31913 /* NDVSynthesizeSingleton.h */,
+				D885DA731225014300F31913 /* NDVSynthesizeKVOHelpers.h */,
+				D885DA7B1225027600F31913 /* NDVDebuggingMacros.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -103,6 +120,10 @@
 				D885D8031223B1E200F31913 /* NSString+NDVAdditions.m */,
 				D885D8201223B72700F31913 /* UIImage+NDVAdditions.h */,
 				D885D8211223B72700F31913 /* UIImage+NDVAdditions.m */,
+				D885DA471224FAD000F31913 /* UINavigationController+NDVAdditions.h */,
+				D885DA481224FAD000F31913 /* UINavigationController+NDVAdditions.m */,
+				D885DA5F1224FC6400F31913 /* UIView+NDVAdditions.h */,
+				D885DA601224FC6400F31913 /* UIView+NDVAdditions.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -132,6 +153,11 @@
 				D885D8221223B72700F31913 /* UIImage+NDVAdditions.h in Headers */,
 				D885D82C1223BC6C00F31913 /* NDVCategories.h in Headers */,
 				D885D8301223BCBA00F31913 /* NDVKit.h in Headers */,
+				D885DA491224FAD000F31913 /* UINavigationController+NDVAdditions.h in Headers */,
+				D885DA611224FC6400F31913 /* UIView+NDVAdditions.h in Headers */,
+				D885DA701224FE9600F31913 /* NDVSynthesizeSingleton.h in Headers */,
+				D885DA741225014300F31913 /* NDVSynthesizeKVOHelpers.h in Headers */,
+				D885DA7C1225027600F31913 /* NDVDebuggingMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +209,8 @@
 				D885D8051223B1E200F31913 /* NSString+NDVAdditions.m in Sources */,
 				D885D8171223B55400F31913 /* NSObject+NDVPropertyAdditions.m in Sources */,
 				D885D8231223B72700F31913 /* UIImage+NDVAdditions.m in Sources */,
+				D885DA4A1224FAD000F31913 /* UINavigationController+NDVAdditions.m in Sources */,
+				D885DA621224FC6400F31913 /* UIView+NDVAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
