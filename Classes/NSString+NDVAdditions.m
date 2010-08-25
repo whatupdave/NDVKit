@@ -15,7 +15,7 @@
 
 - (BOOL)isWhitespace {
   NSCharacterSet* whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-  for (NSInteger i = 0; i < self.length; i++) {
+  for (NSUInteger i = 0; i < self.length; i++) {
     unichar character = [self characterAtIndex:i];
     if (![whitespace characterIsMember:character]) {
       return NO;

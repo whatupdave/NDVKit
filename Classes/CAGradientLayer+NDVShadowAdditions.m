@@ -19,8 +19,8 @@
 	CAGradientLayer* shadowLayer = [[[self alloc] init] autorelease];
   shadowLayer.frame = CGRectZero;
 
-  CGColorRef darkColorRef = [darkColor colorWithAlphaComponent:0.5].CGColor;
-  CGColorRef lightColorRef = [lightColor colorWithAlphaComponent:0.0].CGColor;
+  CGColorRef darkColorRef = [darkColor colorWithAlphaComponent:0.5f].CGColor;
+  CGColorRef lightColorRef = [lightColor colorWithAlphaComponent:0.0f].CGColor;
 
 	shadowLayer.colors = (shadowStyle == NDVShadowStyleFadingUp ?
                         [NSArray arrayWithObjects:(id)lightColorRef, (id)darkColorRef, nil] :

@@ -95,7 +95,7 @@
                 drawTransposed:(BOOL)transpose {
 
   BOOL shouldScale = NO;
-  CGFloat newScale = 1.0;
+  CGFloat newScale = 1.0f;
 
   if ([UIScreen instancesRespondToSelector:@selector(scale)]) {
 		shouldScale = YES;
@@ -120,7 +120,7 @@
                                               CGImageGetBitsPerComponent(imageRef),
                                               0,
                                               CGImageGetColorSpace(imageRef),
-                                              CGImageGetBitmapInfo(imageRef));
+                                              bitmapInfo);
 
   CGContextConcatCTM(bitmap, transform);
   CGContextSetInterpolationQuality(bitmap, kCGInterpolationHigh);
@@ -153,19 +153,19 @@
     case UIImageOrientationDown:
     case UIImageOrientationDownMirrored:
       transform = CGAffineTransformTranslate(transform, newSize.width, newSize.height);
-      transform = CGAffineTransformRotate(transform, M_PI);
+      transform = CGAffineTransformRotate(transform, (CGFloat)M_PI);
       break;
 
     case UIImageOrientationLeft:
     case UIImageOrientationLeftMirrored:
       transform = CGAffineTransformTranslate(transform, newSize.width, 0);
-      transform = CGAffineTransformRotate(transform, M_PI_2);
+      transform = CGAffineTransformRotate(transform, (CGFloat)M_PI_2);
       break;
 
     case UIImageOrientationRight:
     case UIImageOrientationRightMirrored:
       transform = CGAffineTransformTranslate(transform, 0, newSize.height);
-      transform = CGAffineTransformRotate(transform, -M_PI_2);
+      transform = CGAffineTransformRotate(transform, -(CGFloat)M_PI_2);
       break;
 
     default:
@@ -194,12 +194,12 @@
 
 
 - (CGFloat)calculatedLeftCapWidth {
-  return ((self.size.width - 1.0) / 2.0);
+  return ((self.size.width - 1.0f) / 2.0f);
 }
 
 
 - (CGFloat)calculatedTopCapHeight {
-  return ((self.size.height - 1.0) / 2.0);
+  return ((self.size.height - 1.0f) / 2.0f);
 }
 
 
