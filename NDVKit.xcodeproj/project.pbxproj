@@ -56,6 +56,7 @@
 		D885DCB01226175500F31913 /* translate.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC9E1226175500F31913 /* translate.h */; };
 		D885DCB6122617BD00F31913 /* CGPath+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DCB4122617BD00F31913 /* CGPath+NDVAdditions.h */; };
 		D885DCB7122617BD00F31913 /* CGPath+NDVAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = D885DCB5122617BD00F31913 /* CGPath+NDVAdditions.mm */; };
+		D885DCF112261C8600F31913 /* NDVMemoryMangementMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,7 @@
 		D885DC9E1226175500F31913 /* translate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = translate.h; path = "Dependencies/inkscsape-curvefit/translate.h"; sourceTree = SOURCE_ROOT; };
 		D885DCB4122617BD00F31913 /* CGPath+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPath+NDVAdditions.h"; sourceTree = "<group>"; };
 		D885DCB5122617BD00F31913 /* CGPath+NDVAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CGPath+NDVAdditions.mm"; sourceTree = "<group>"; };
+		D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVMemoryMangementMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 				D885DA731225014300F31913 /* NDVKVOMacros.h */,
 				D885DBBE1226073400F31913 /* NDVMathMacros.h */,
 				D885DA6F1224FE9600F31913 /* NDVSynthesizeSingletonMacro.h */,
+				D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */,
 			);
 			name = Miscellaneous;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				D885DCAF1226175500F31913 /* transforms.h in Headers */,
 				D885DCB01226175500F31913 /* translate.h in Headers */,
 				D885DCB6122617BD00F31913 /* CGPath+NDVAdditions.h in Headers */,
+				D885DCF112261C8600F31913 /* NDVMemoryMangementMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

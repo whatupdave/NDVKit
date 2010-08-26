@@ -11,5 +11,6 @@
 #import "NDVMathMacros.h"
 #import "NDVKVOMacros.h"
 #import "NDVSynthesizeSingletonMacro.h"
+#import "NDVMemoryMangementMacros.h"
 
 #import "NDVCategories.h"

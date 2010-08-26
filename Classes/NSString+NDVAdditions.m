@@ -7,7 +7,7 @@
 //
 
 #import "NSString+NDVAdditions.h"
-#import <CommonCrypto/CommonDigest.h>
+#import "NSData+NDVAdditions.h"
 
 
 @implementation NSString(NDVAdditions)
