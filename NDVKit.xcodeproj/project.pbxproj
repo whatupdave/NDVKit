@@ -34,6 +34,8 @@
 		D885DBBF1226073400F31913 /* NDVMathMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DBBE1226073400F31913 /* NDVMathMacros.h */; };
 		D885DBF812260B7A00F31913 /* CGGeometry+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DBF612260B7A00F31913 /* CGGeometry+NDVAdditions.h */; };
 		D885DBF912260B7A00F31913 /* CGGeometry+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DBF712260B7A00F31913 /* CGGeometry+NDVAdditions.m */; };
+		D885DC2412260E1B00F31913 /* NSArray+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC2212260E1B00F31913 /* NSArray+NDVAdditions.h */; };
+		D885DC2512260E1B00F31913 /* NSArray+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DC2312260E1B00F31913 /* NSArray+NDVAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		D885DBBE1226073400F31913 /* NDVMathMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVMathMacros.h; sourceTree = "<group>"; };
 		D885DBF612260B7A00F31913 /* CGGeometry+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+NDVAdditions.h"; sourceTree = "<group>"; };
 		D885DBF712260B7A00F31913 /* CGGeometry+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+NDVAdditions.m"; sourceTree = "<group>"; };
+		D885DC2212260E1B00F31913 /* NSArray+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NDVAdditions.h"; sourceTree = "<group>"; };
+		D885DC2312260E1B00F31913 /* NSArray+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NDVAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 		D885DA951225066B00F31913 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				D885DC2212260E1B00F31913 /* NSArray+NDVAdditions.h */,
+				D885DC2312260E1B00F31913 /* NSArray+NDVAdditions.m */,
 				D885D7BD1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h */,
 				D885D7BE1223A7D300F31913 /* NSDate+NDVCalendarAdditions.m */,
 				D885D7FA1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h */,
@@ -223,6 +229,7 @@
 				D885DB3E12254F3000F31913 /* CGImage+NDVAdditions.h in Headers */,
 				D885DBBF1226073400F31913 /* NDVMathMacros.h in Headers */,
 				D885DBF812260B7A00F31913 /* CGGeometry+NDVAdditions.h in Headers */,
+				D885DC2412260E1B00F31913 /* NSArray+NDVAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +286,7 @@
 				D885DA901225059700F31913 /* CAGradientLayer+NDVShadowAdditions.m in Sources */,
 				D885DB3F12254F3000F31913 /* CGImage+NDVAdditions.c in Sources */,
 				D885DBF912260B7A00F31913 /* CGGeometry+NDVAdditions.m in Sources */,
+				D885DC2512260E1B00F31913 /* NSArray+NDVAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
