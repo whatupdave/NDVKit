@@ -24,13 +24,16 @@
 		D885DA4A1224FAD000F31913 /* UINavigationController+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DA481224FAD000F31913 /* UINavigationController+NDVAdditions.m */; };
 		D885DA611224FC6400F31913 /* UIView+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA5F1224FC6400F31913 /* UIView+NDVAdditions.h */; };
 		D885DA621224FC6400F31913 /* UIView+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DA601224FC6400F31913 /* UIView+NDVAdditions.m */; };
-		D885DA701224FE9600F31913 /* NDVSynthesizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA6F1224FE9600F31913 /* NDVSynthesizeSingleton.h */; };
-		D885DA741225014300F31913 /* NDVSynthesizeKVOHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA731225014300F31913 /* NDVSynthesizeKVOHelpers.h */; };
+		D885DA701224FE9600F31913 /* NDVSynthesizeSingletonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA6F1224FE9600F31913 /* NDVSynthesizeSingletonMacro.h */; };
+		D885DA741225014300F31913 /* NDVKVOMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA731225014300F31913 /* NDVKVOMacros.h */; };
 		D885DA7C1225027600F31913 /* NDVDebuggingMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA7B1225027600F31913 /* NDVDebuggingMacros.h */; };
 		D885DA8F1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA8D1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.h */; };
 		D885DA901225059700F31913 /* CAGradientLayer+NDVShadowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DA8E1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.m */; };
 		D885DB3E12254F3000F31913 /* CGImage+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DB3C12254F3000F31913 /* CGImage+NDVAdditions.h */; };
 		D885DB3F12254F3000F31913 /* CGImage+NDVAdditions.c in Sources */ = {isa = PBXBuildFile; fileRef = D885DB3D12254F3000F31913 /* CGImage+NDVAdditions.c */; };
+		D885DBBF1226073400F31913 /* NDVMathMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DBBE1226073400F31913 /* NDVMathMacros.h */; };
+		D885DBF812260B7A00F31913 /* CGGeometry+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DBF612260B7A00F31913 /* CGGeometry+NDVAdditions.h */; };
+		D885DBF912260B7A00F31913 /* CGGeometry+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DBF712260B7A00F31913 /* CGGeometry+NDVAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,13 +58,16 @@
 		D885DA481224FAD000F31913 /* UINavigationController+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NDVAdditions.m"; sourceTree = "<group>"; };
 		D885DA5F1224FC6400F31913 /* UIView+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NDVAdditions.h"; sourceTree = "<group>"; };
 		D885DA601224FC6400F31913 /* UIView+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NDVAdditions.m"; sourceTree = "<group>"; };
-		D885DA6F1224FE9600F31913 /* NDVSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVSynthesizeSingleton.h; sourceTree = "<group>"; };
-		D885DA731225014300F31913 /* NDVSynthesizeKVOHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVSynthesizeKVOHelpers.h; sourceTree = "<group>"; };
+		D885DA6F1224FE9600F31913 /* NDVSynthesizeSingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVSynthesizeSingletonMacro.h; sourceTree = "<group>"; };
+		D885DA731225014300F31913 /* NDVKVOMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVKVOMacros.h; sourceTree = "<group>"; };
 		D885DA7B1225027600F31913 /* NDVDebuggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVDebuggingMacros.h; sourceTree = "<group>"; };
 		D885DA8D1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+NDVShadowAdditions.h"; sourceTree = "<group>"; };
 		D885DA8E1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAGradientLayer+NDVShadowAdditions.m"; sourceTree = "<group>"; };
 		D885DB3C12254F3000F31913 /* CGImage+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImage+NDVAdditions.h"; sourceTree = "<group>"; };
 		D885DB3D12254F3000F31913 /* CGImage+NDVAdditions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "CGImage+NDVAdditions.c"; sourceTree = "<group>"; };
+		D885DBBE1226073400F31913 /* NDVMathMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVMathMacros.h; sourceTree = "<group>"; };
+		D885DBF612260B7A00F31913 /* CGGeometry+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+NDVAdditions.h"; sourceTree = "<group>"; };
+		D885DBF712260B7A00F31913 /* CGGeometry+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+NDVAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +103,9 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D885DBB3122605AB00F31913 /* Miscellaneous */,
 				D885D82A1223BC4700F31913 /* Categories */,
 				D885D82F1223BCBA00F31913 /* NDVKit.h */,
-				D885DA6F1224FE9600F31913 /* NDVSynthesizeSingleton.h */,
-				D885DA731225014300F31913 /* NDVSynthesizeKVOHelpers.h */,
-				D885DA7B1225027600F31913 /* NDVDebuggingMacros.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -176,10 +180,23 @@
 		D885DB4D12254FFE00F31913 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				D885DB3C12254F3000F31913 /* CGImage+NDVAdditions.h */,
 				D885DB3D12254F3000F31913 /* CGImage+NDVAdditions.c */,
+				D885DB3C12254F3000F31913 /* CGImage+NDVAdditions.h */,
+				D885DBF612260B7A00F31913 /* CGGeometry+NDVAdditions.h */,
+				D885DBF712260B7A00F31913 /* CGGeometry+NDVAdditions.m */,
 			);
 			name = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		D885DBB3122605AB00F31913 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				D885DA7B1225027600F31913 /* NDVDebuggingMacros.h */,
+				D885DA731225014300F31913 /* NDVKVOMacros.h */,
+				D885DBBE1226073400F31913 /* NDVMathMacros.h */,
+				D885DA6F1224FE9600F31913 /* NDVSynthesizeSingletonMacro.h */,
+			);
+			name = Miscellaneous;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,11 +216,13 @@
 				D885D8301223BCBA00F31913 /* NDVKit.h in Headers */,
 				D885DA491224FAD000F31913 /* UINavigationController+NDVAdditions.h in Headers */,
 				D885DA611224FC6400F31913 /* UIView+NDVAdditions.h in Headers */,
-				D885DA701224FE9600F31913 /* NDVSynthesizeSingleton.h in Headers */,
-				D885DA741225014300F31913 /* NDVSynthesizeKVOHelpers.h in Headers */,
+				D885DA701224FE9600F31913 /* NDVSynthesizeSingletonMacro.h in Headers */,
+				D885DA741225014300F31913 /* NDVKVOMacros.h in Headers */,
 				D885DA7C1225027600F31913 /* NDVDebuggingMacros.h in Headers */,
 				D885DA8F1225059700F31913 /* CAGradientLayer+NDVShadowAdditions.h in Headers */,
 				D885DB3E12254F3000F31913 /* CGImage+NDVAdditions.h in Headers */,
+				D885DBBF1226073400F31913 /* NDVMathMacros.h in Headers */,
+				D885DBF812260B7A00F31913 /* CGGeometry+NDVAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +278,7 @@
 				D885DA621224FC6400F31913 /* UIView+NDVAdditions.m in Sources */,
 				D885DA901225059700F31913 /* CAGradientLayer+NDVShadowAdditions.m in Sources */,
 				D885DB3F12254F3000F31913 /* CGImage+NDVAdditions.c in Sources */,
+				D885DBF912260B7A00F31913 /* CGGeometry+NDVAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

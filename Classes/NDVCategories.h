@@ -19,7 +19,8 @@
 #import "UINavigationController+NDVAdditions.h"
 
 // QuartzCore
-#import "CAGradientLayer+NDVShadowLayer.h"
+#import "CAGradientLayer+NDVShadowAdditions.h"
 
 // CoreGraphics
+#import "CGGeometry+NDVAdditions.h"
 #import "CGImage+NDVAdditions.h"

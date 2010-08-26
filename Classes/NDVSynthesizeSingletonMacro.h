@@ -1,5 +1,5 @@
 //
-//  NDVSynthesizeSingleton.h
+//  NDVSynthesizeSingletonMacro.h
 //  CocoaWithLove
 //
 //  Created by Matt Gallagher on 20/10/08.

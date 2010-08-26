@@ -7,7 +7,9 @@
 //
 
 
-#import "NDVCategories.h"
-#import "NDVSynthesizeSingleton.h"
-#import "NDVSynthesizeKVOHelpers.h"
 #import "NDVDebuggingMacros.h"
+#import "NDVMathMacros.h"
+#import "NDVKVOMacros.h"
+#import "NDVSynthesizeSingletonMacro.h"
+
+#import "NDVCategories.h"

@@ -1,5 +1,5 @@
 //
-//  NDVSynthesizeKVOHelpers.h
+//  NDVKVOMacros.h
 //  NDVKit
 //
 //  Created by Nathan de Vries on 25/08/10.
