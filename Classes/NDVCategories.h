@@ -9,6 +9,7 @@
 
 // Foundation
 #import "NSObject+NDVPropertyAdditions.h"
+#import "NSData+NDVAdditions.h"
 #import "NSString+NDVAdditions.h"
 #import "NSDate+NDVCalendarAdditions.h"
 #import "NSDateFormatter+NDVAdditions.h"

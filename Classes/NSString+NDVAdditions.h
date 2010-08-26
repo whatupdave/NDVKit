@@ -22,7 +22,7 @@
 
 - (NSString *)stringByAddingURLEncodingPercentEscapes;
 
-- (NSString *)stringByHashingWithMD5;
+- (NSString *)MD5Sum;
 
 
 @end

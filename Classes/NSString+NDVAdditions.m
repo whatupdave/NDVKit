@@ -64,18 +64,8 @@
 }
 
 
-- (NSString *)stringByHashingWithMD5 {
-	NSData* data = [self dataUsingEncoding:NSUTF8StringEncoding];
-
-	unsigned char hashData[CC_MD5_DIGEST_LENGTH];
-	CC_MD5([data bytes], [data length], hashData);
-
-	NSMutableString* hashString = [NSMutableString string];
-	for (NSUInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
-    [hashString appendFormat:@"%02x", hashData[i]];
-  }
-
-	return hashString;
+- (NSString *)MD5Sum {
+  return [[self dataUsingEncoding:NSUTF8StringEncoding] MD5Sum];
 }
 
 
