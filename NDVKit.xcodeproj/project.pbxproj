@@ -38,6 +38,24 @@
 		D885DC2512260E1B00F31913 /* NSArray+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DC2312260E1B00F31913 /* NSArray+NDVAdditions.m */; };
 		D885DC431226128700F31913 /* NSData+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC411226128700F31913 /* NSData+NDVAdditions.h */; };
 		D885DC441226128700F31913 /* NSData+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DC421226128700F31913 /* NSData+NDVAdditions.m */; };
+		D885DC9F1226175500F31913 /* bezier-utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D885DC8D1226175500F31913 /* bezier-utils.cpp */; };
+		D885DCA01226175500F31913 /* bezier-utils.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC8E1226175500F31913 /* bezier-utils.h */; };
+		D885DCA11226175500F31913 /* coord.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC8F1226175500F31913 /* coord.h */; };
+		D885DCA41226175500F31913 /* isnan.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC921226175500F31913 /* isnan.h */; };
+		D885DCA51226175500F31913 /* macros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC931226175500F31913 /* macros.h */; };
+		D885DCA61226175500F31913 /* math-utils.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC941226175500F31913 /* math-utils.h */; };
+		D885DCA71226175500F31913 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D885DC951226175500F31913 /* matrix.cpp */; };
+		D885DCA81226175500F31913 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC961226175500F31913 /* matrix.h */; };
+		D885DCA91226175500F31913 /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D885DC971226175500F31913 /* point.cpp */; };
+		D885DCAA1226175500F31913 /* point.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC981226175500F31913 /* point.h */; };
+		D885DCAB1226175500F31913 /* rotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D885DC991226175500F31913 /* rotate.cpp */; };
+		D885DCAC1226175500F31913 /* rotate.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC9A1226175500F31913 /* rotate.h */; };
+		D885DCAD1226175500F31913 /* scale.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC9B1226175500F31913 /* scale.h */; };
+		D885DCAE1226175500F31913 /* transforms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D885DC9C1226175500F31913 /* transforms.cpp */; };
+		D885DCAF1226175500F31913 /* transforms.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC9D1226175500F31913 /* transforms.h */; };
+		D885DCB01226175500F31913 /* translate.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC9E1226175500F31913 /* translate.h */; };
+		D885DCB6122617BD00F31913 /* CGPath+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DCB4122617BD00F31913 /* CGPath+NDVAdditions.h */; };
+		D885DCB7122617BD00F31913 /* CGPath+NDVAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = D885DCB5122617BD00F31913 /* CGPath+NDVAdditions.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +94,24 @@
 		D885DC2312260E1B00F31913 /* NSArray+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NDVAdditions.m"; sourceTree = "<group>"; };
 		D885DC411226128700F31913 /* NSData+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NDVAdditions.h"; sourceTree = "<group>"; };
 		D885DC421226128700F31913 /* NSData+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NDVAdditions.m"; sourceTree = "<group>"; };
+		D885DC8D1226175500F31913 /* bezier-utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "bezier-utils.cpp"; path = "Dependencies/inkscsape-curvefit/bezier-utils.cpp"; sourceTree = SOURCE_ROOT; };
+		D885DC8E1226175500F31913 /* bezier-utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "bezier-utils.h"; path = "Dependencies/inkscsape-curvefit/bezier-utils.h"; sourceTree = SOURCE_ROOT; };
+		D885DC8F1226175500F31913 /* coord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coord.h; path = "Dependencies/inkscsape-curvefit/coord.h"; sourceTree = SOURCE_ROOT; };
+		D885DC921226175500F31913 /* isnan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isnan.h; path = "Dependencies/inkscsape-curvefit/isnan.h"; sourceTree = SOURCE_ROOT; };
+		D885DC931226175500F31913 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = macros.h; path = "Dependencies/inkscsape-curvefit/macros.h"; sourceTree = SOURCE_ROOT; };
+		D885DC941226175500F31913 /* math-utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "math-utils.h"; path = "Dependencies/inkscsape-curvefit/math-utils.h"; sourceTree = SOURCE_ROOT; };
+		D885DC951226175500F31913 /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrix.cpp; path = "Dependencies/inkscsape-curvefit/matrix.cpp"; sourceTree = SOURCE_ROOT; };
+		D885DC961226175500F31913 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrix.h; path = "Dependencies/inkscsape-curvefit/matrix.h"; sourceTree = SOURCE_ROOT; };
+		D885DC971226175500F31913 /* point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = point.cpp; path = "Dependencies/inkscsape-curvefit/point.cpp"; sourceTree = SOURCE_ROOT; };
+		D885DC981226175500F31913 /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = point.h; path = "Dependencies/inkscsape-curvefit/point.h"; sourceTree = SOURCE_ROOT; };
+		D885DC991226175500F31913 /* rotate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rotate.cpp; path = "Dependencies/inkscsape-curvefit/rotate.cpp"; sourceTree = SOURCE_ROOT; };
+		D885DC9A1226175500F31913 /* rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rotate.h; path = "Dependencies/inkscsape-curvefit/rotate.h"; sourceTree = SOURCE_ROOT; };
+		D885DC9B1226175500F31913 /* scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scale.h; path = "Dependencies/inkscsape-curvefit/scale.h"; sourceTree = SOURCE_ROOT; };
+		D885DC9C1226175500F31913 /* transforms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transforms.cpp; path = "Dependencies/inkscsape-curvefit/transforms.cpp"; sourceTree = SOURCE_ROOT; };
+		D885DC9D1226175500F31913 /* transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transforms.h; path = "Dependencies/inkscsape-curvefit/transforms.h"; sourceTree = SOURCE_ROOT; };
+		D885DC9E1226175500F31913 /* translate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = translate.h; path = "Dependencies/inkscsape-curvefit/translate.h"; sourceTree = SOURCE_ROOT; };
+		D885DCB4122617BD00F31913 /* CGPath+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPath+NDVAdditions.h"; sourceTree = "<group>"; };
+		D885DCB5122617BD00F31913 /* CGPath+NDVAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CGPath+NDVAdditions.mm"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +147,10 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D885DBB3122605AB00F31913 /* Miscellaneous */,
-				D885D82A1223BC4700F31913 /* Categories */,
 				D885D82F1223BCBA00F31913 /* NDVKit.h */,
+				D885D82A1223BC4700F31913 /* Categories */,
+				D885DBB3122605AB00F31913 /* Miscellaneous */,
+				D885DC7C1226170D00F31913 /* Dependencies */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -192,10 +229,12 @@
 		D885DB4D12254FFE00F31913 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				D885DB3D12254F3000F31913 /* CGImage+NDVAdditions.c */,
-				D885DB3C12254F3000F31913 /* CGImage+NDVAdditions.h */,
 				D885DBF612260B7A00F31913 /* CGGeometry+NDVAdditions.h */,
 				D885DBF712260B7A00F31913 /* CGGeometry+NDVAdditions.m */,
+				D885DB3D12254F3000F31913 /* CGImage+NDVAdditions.c */,
+				D885DB3C12254F3000F31913 /* CGImage+NDVAdditions.h */,
+				D885DCB4122617BD00F31913 /* CGPath+NDVAdditions.h */,
+				D885DCB5122617BD00F31913 /* CGPath+NDVAdditions.mm */,
 			);
 			name = CoreGraphics;
 			sourceTree = "<group>";
@@ -209,6 +248,37 @@
 				D885DA6F1224FE9600F31913 /* NDVSynthesizeSingletonMacro.h */,
 			);
 			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		D885DC7C1226170D00F31913 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				D885DC7E1226172A00F31913 /* Inkscape-Curvefit */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		D885DC7E1226172A00F31913 /* Inkscape-Curvefit */ = {
+			isa = PBXGroup;
+			children = (
+				D885DC8D1226175500F31913 /* bezier-utils.cpp */,
+				D885DC8E1226175500F31913 /* bezier-utils.h */,
+				D885DC8F1226175500F31913 /* coord.h */,
+				D885DC921226175500F31913 /* isnan.h */,
+				D885DC931226175500F31913 /* macros.h */,
+				D885DC941226175500F31913 /* math-utils.h */,
+				D885DC951226175500F31913 /* matrix.cpp */,
+				D885DC961226175500F31913 /* matrix.h */,
+				D885DC971226175500F31913 /* point.cpp */,
+				D885DC981226175500F31913 /* point.h */,
+				D885DC991226175500F31913 /* rotate.cpp */,
+				D885DC9A1226175500F31913 /* rotate.h */,
+				D885DC9B1226175500F31913 /* scale.h */,
+				D885DC9C1226175500F31913 /* transforms.cpp */,
+				D885DC9D1226175500F31913 /* transforms.h */,
+				D885DC9E1226175500F31913 /* translate.h */,
+			);
+			name = "Inkscape-Curvefit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +307,18 @@
 				D885DBF812260B7A00F31913 /* CGGeometry+NDVAdditions.h in Headers */,
 				D885DC2412260E1B00F31913 /* NSArray+NDVAdditions.h in Headers */,
 				D885DC431226128700F31913 /* NSData+NDVAdditions.h in Headers */,
+				D885DCA01226175500F31913 /* bezier-utils.h in Headers */,
+				D885DCA11226175500F31913 /* coord.h in Headers */,
+				D885DCA41226175500F31913 /* isnan.h in Headers */,
+				D885DCA51226175500F31913 /* macros.h in Headers */,
+				D885DCA61226175500F31913 /* math-utils.h in Headers */,
+				D885DCA81226175500F31913 /* matrix.h in Headers */,
+				D885DCAA1226175500F31913 /* point.h in Headers */,
+				D885DCAC1226175500F31913 /* rotate.h in Headers */,
+				D885DCAD1226175500F31913 /* scale.h in Headers */,
+				D885DCAF1226175500F31913 /* transforms.h in Headers */,
+				D885DCB01226175500F31913 /* translate.h in Headers */,
+				D885DCB6122617BD00F31913 /* CGPath+NDVAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +377,12 @@
 				D885DBF912260B7A00F31913 /* CGGeometry+NDVAdditions.m in Sources */,
 				D885DC2512260E1B00F31913 /* NSArray+NDVAdditions.m in Sources */,
 				D885DC441226128700F31913 /* NSData+NDVAdditions.m in Sources */,
+				D885DC9F1226175500F31913 /* bezier-utils.cpp in Sources */,
+				D885DCA71226175500F31913 /* matrix.cpp in Sources */,
+				D885DCA91226175500F31913 /* point.cpp in Sources */,
+				D885DCAB1226175500F31913 /* rotate.cpp in Sources */,
+				D885DCAE1226175500F31913 /* transforms.cpp in Sources */,
+				D885DCB7122617BD00F31913 /* CGPath+NDVAdditions.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
