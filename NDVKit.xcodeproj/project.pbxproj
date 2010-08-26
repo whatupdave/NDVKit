@@ -57,6 +57,8 @@
 		D885DCB6122617BD00F31913 /* CGPath+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DCB4122617BD00F31913 /* CGPath+NDVAdditions.h */; };
 		D885DCB7122617BD00F31913 /* CGPath+NDVAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = D885DCB5122617BD00F31913 /* CGPath+NDVAdditions.mm */; };
 		D885DCF112261C8600F31913 /* NDVMemoryMangementMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */; };
+		D885DD321226280F00F31913 /* NDVShadowedTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DD301226280F00F31913 /* NDVShadowedTableView.h */; };
+		D885DD331226280F00F31913 /* NDVShadowedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DD311226280F00F31913 /* NDVShadowedTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +116,8 @@
 		D885DCB4122617BD00F31913 /* CGPath+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPath+NDVAdditions.h"; sourceTree = "<group>"; };
 		D885DCB5122617BD00F31913 /* CGPath+NDVAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CGPath+NDVAdditions.mm"; sourceTree = "<group>"; };
 		D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVMemoryMangementMacros.h; sourceTree = "<group>"; };
+		D885DD301226280F00F31913 /* NDVShadowedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVShadowedTableView.h; sourceTree = "<group>"; };
+		D885DD311226280F00F31913 /* NDVShadowedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDVShadowedTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				D885D82F1223BCBA00F31913 /* NDVKit.h */,
+				D885DD2C122627F800F31913 /* UIViews */,
 				D885D82A1223BC4700F31913 /* Categories */,
 				D885DBB3122605AB00F31913 /* Miscellaneous */,
 				D885DC7C1226170D00F31913 /* Dependencies */,
@@ -284,6 +289,15 @@
 			name = "Inkscape-Curvefit";
 			sourceTree = "<group>";
 		};
+		D885DD2C122627F800F31913 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				D885DD301226280F00F31913 /* NDVShadowedTableView.h */,
+				D885DD311226280F00F31913 /* NDVShadowedTableView.m */,
+			);
+			name = UIViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -323,6 +337,7 @@
 				D885DCB01226175500F31913 /* translate.h in Headers */,
 				D885DCB6122617BD00F31913 /* CGPath+NDVAdditions.h in Headers */,
 				D885DCF112261C8600F31913 /* NDVMemoryMangementMacros.h in Headers */,
+				D885DD321226280F00F31913 /* NDVShadowedTableView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +402,7 @@
 				D885DCAB1226175500F31913 /* rotate.cpp in Sources */,
 				D885DCAE1226175500F31913 /* transforms.cpp in Sources */,
 				D885DCB7122617BD00F31913 /* CGPath+NDVAdditions.mm in Sources */,
+				D885DD331226280F00F31913 /* NDVShadowedTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

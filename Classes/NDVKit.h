@@ -14,3 +14,5 @@
 #import "NDVMemoryMangementMacros.h"
 
 #import "NDVCategories.h"
+
+#import "NDVShadowedTableView.h"
