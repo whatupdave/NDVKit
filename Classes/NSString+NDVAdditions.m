@@ -39,6 +39,21 @@
 }
 
 
+- (BOOL)containsString:(NSString *)aString {
+  return [self containsString:aString
+                 ignoringCase:NO];
+}
+
+
+- (BOOL)containsString:(NSString *)aString ignoringCase:(BOOL)ignoreCase {
+  NSStringCompareOptions compareOptions = ignoreCase ? NSCaseInsensitiveSearch : 0;
+  NSRange range = [self rangeOfString:aString
+                              options:compareOptions];
+
+  return (range.location != NSNotFound);
+}
+
+
 - (NSString *)stringByAddingURLEncodingPercentEscapes {
   CFStringRef encodedString = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
                                                                       (CFStringRef)self,

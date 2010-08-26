@@ -17,6 +17,9 @@
 
 - (BOOL)isNumeric;
 
+- (BOOL)containsString:(NSString *)aString;
+- (BOOL)containsString:(NSString *)aString ignoringCase:(BOOL)flag;
+
 - (NSString *)stringByAddingURLEncodingPercentEscapes;
 
 - (NSString *)stringByHashingWithMD5;
