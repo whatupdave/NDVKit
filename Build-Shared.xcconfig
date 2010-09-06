@@ -10,7 +10,7 @@
 PRODUCT_NAME = NDVKit
 
 
-SDKROOT                    = iphoneos4.0
+SDKROOT                    = iphoneos4.1
 IPHONEOS_DEPLOYMENT_TARGET = 3.0
 
 
