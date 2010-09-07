@@ -7,6 +7,13 @@
 //
 
 
+//
+// TODO: Convert this static library into a static bundle (.framework):
+//
+//   http://www.drobnik.com/touch/2010/04/making-your-own-iphone-frameworks/
+//   http://www.drobnik.com/touch/2010/05/making-your-own-iphone-frameworks-in-xcode/
+
+
 PRODUCT_NAME = NDVKit
 
 
