@@ -1,20 +1,16 @@
 //
-//  UIImage+NDVAdditions.h
+//  UIImage+NDVStretchAdditions.h
 //  NDVKit
 //
-//  Created by Nathan de Vries on 24/08/10.
+//  Created by Nathan de Vries on 8/09/10.
 //  Copyright 2010 Nathan de Vries. All rights reserved.
 //
-
 
 #import <UIKit/UIKit.h>
 
 
-@interface UIImage (NDVAdditions)
+@interface UIImage (NDVStretchAdditions)
 
-
-- (UIImage *)imageScaledToSizeIgnoringAspectRatio:(CGSize)newSize;
-- (UIImage *)imageScaledToFitBounds:(CGSize)bounds;
 
 - (UIImage *)stretchableImage;
 - (UIImage *)horizontallyStretchableImage;

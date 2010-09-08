@@ -16,8 +16,8 @@
 		D885D8051223B1E200F31913 /* NSString+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885D8031223B1E200F31913 /* NSString+NDVAdditions.m */; };
 		D885D8161223B55400F31913 /* NSObject+NDVPropertyAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D8141223B55400F31913 /* NSObject+NDVPropertyAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885D8171223B55400F31913 /* NSObject+NDVPropertyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885D8151223B55400F31913 /* NSObject+NDVPropertyAdditions.m */; };
-		D885D8221223B72700F31913 /* UIImage+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D8201223B72700F31913 /* UIImage+NDVAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D885D8231223B72700F31913 /* UIImage+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885D8211223B72700F31913 /* UIImage+NDVAdditions.m */; };
+		D885D8221223B72700F31913 /* UIImage+NDVRoundingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D8201223B72700F31913 /* UIImage+NDVRoundingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D885D8231223B72700F31913 /* UIImage+NDVRoundingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885D8211223B72700F31913 /* UIImage+NDVRoundingAdditions.m */; };
 		D885D82C1223BC6C00F31913 /* NDVCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D82B1223BC6C00F31913 /* NDVCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885D8301223BCBA00F31913 /* NDVKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D82F1223BCBA00F31913 /* NDVKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885DA491224FAD000F31913 /* UINavigationController+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DA471224FAD000F31913 /* UINavigationController+NDVAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +41,12 @@
 		D885DCF112261C8600F31913 /* NDVMemoryMangementMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885DD321226280F00F31913 /* NDVShadowedTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DD301226280F00F31913 /* NDVShadowedTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885DD331226280F00F31913 /* NDVShadowedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DD311226280F00F31913 /* NDVShadowedTableView.m */; };
+		D897302D1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D897302B1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D897302E1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D897302C1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m */; };
+		D89730351237295600DFB1E9 /* UIImage+NDVStretchAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D89730331237295600DFB1E9 /* UIImage+NDVStretchAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D89730361237295600DFB1E9 /* UIImage+NDVStretchAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D89730341237295600DFB1E9 /* UIImage+NDVStretchAdditions.m */; };
+		D897303912372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D897303712372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D897303A12372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D897303812372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +60,8 @@
 		D885D8031223B1E200F31913 /* NSString+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NDVAdditions.m"; sourceTree = "<group>"; };
 		D885D8141223B55400F31913 /* NSObject+NDVPropertyAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NDVPropertyAdditions.h"; sourceTree = "<group>"; };
 		D885D8151223B55400F31913 /* NSObject+NDVPropertyAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NDVPropertyAdditions.m"; sourceTree = "<group>"; };
-		D885D8201223B72700F31913 /* UIImage+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NDVAdditions.h"; sourceTree = "<group>"; };
-		D885D8211223B72700F31913 /* UIImage+NDVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NDVAdditions.m"; sourceTree = "<group>"; };
+		D885D8201223B72700F31913 /* UIImage+NDVRoundingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NDVRoundingAdditions.h"; sourceTree = "<group>"; };
+		D885D8211223B72700F31913 /* UIImage+NDVRoundingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NDVRoundingAdditions.m"; sourceTree = "<group>"; };
 		D885D82B1223BC6C00F31913 /* NDVCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVCategories.h; sourceTree = "<group>"; };
 		D885D82F1223BCBA00F31913 /* NDVKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVKit.h; sourceTree = "<group>"; };
 		D885D94C1224EE6300F31913 /* Build-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Build-Debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +106,12 @@
 		D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVMemoryMangementMacros.h; sourceTree = "<group>"; };
 		D885DD301226280F00F31913 /* NDVShadowedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVShadowedTableView.h; sourceTree = "<group>"; };
 		D885DD311226280F00F31913 /* NDVShadowedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDVShadowedTableView.m; sourceTree = "<group>"; };
+		D897302B1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NDVScalingAdditions.h"; sourceTree = "<group>"; };
+		D897302C1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NDVScalingAdditions.m"; sourceTree = "<group>"; };
+		D89730331237295600DFB1E9 /* UIImage+NDVStretchAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NDVStretchAdditions.h"; sourceTree = "<group>"; };
+		D89730341237295600DFB1E9 /* UIImage+NDVStretchAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NDVStretchAdditions.m"; sourceTree = "<group>"; };
+		D897303712372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NDVAlphaAdditions.h"; sourceTree = "<group>"; };
+		D897303812372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NDVAlphaAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +208,14 @@
 		D885DA961225068000F31913 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				D885D8201223B72700F31913 /* UIImage+NDVAdditions.h */,
-				D885D8211223B72700F31913 /* UIImage+NDVAdditions.m */,
+				D897303712372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.h */,
+				D897303812372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.m */,
+				D885D8201223B72700F31913 /* UIImage+NDVRoundingAdditions.h */,
+				D885D8211223B72700F31913 /* UIImage+NDVRoundingAdditions.m */,
+				D897302B1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h */,
+				D897302C1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m */,
+				D89730331237295600DFB1E9 /* UIImage+NDVStretchAdditions.h */,
+				D89730341237295600DFB1E9 /* UIImage+NDVStretchAdditions.m */,
 				D885DA471224FAD000F31913 /* UINavigationController+NDVAdditions.h */,
 				D885DA481224FAD000F31913 /* UINavigationController+NDVAdditions.m */,
 				D885DA5F1224FC6400F31913 /* UIView+NDVAdditions.h */,
@@ -292,7 +310,7 @@
 				D885D7FC1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h in Headers */,
 				D885D8041223B1E200F31913 /* NSString+NDVAdditions.h in Headers */,
 				D885D8161223B55400F31913 /* NSObject+NDVPropertyAdditions.h in Headers */,
-				D885D8221223B72700F31913 /* UIImage+NDVAdditions.h in Headers */,
+				D885D8221223B72700F31913 /* UIImage+NDVRoundingAdditions.h in Headers */,
 				D885D82C1223BC6C00F31913 /* NDVCategories.h in Headers */,
 				D885D8301223BCBA00F31913 /* NDVKit.h in Headers */,
 				D885DA491224FAD000F31913 /* UINavigationController+NDVAdditions.h in Headers */,
@@ -308,6 +326,9 @@
 				D885DC431226128700F31913 /* NSData+NDVAdditions.h in Headers */,
 				D885DCF112261C8600F31913 /* NDVMemoryMangementMacros.h in Headers */,
 				D885DD321226280F00F31913 /* NDVShadowedTableView.h in Headers */,
+				D897302D1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h in Headers */,
+				D89730351237295600DFB1E9 /* UIImage+NDVStretchAdditions.h in Headers */,
+				D897303912372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +386,7 @@
 				D885D7FD1223B0C100F31913 /* NSDateFormatter+NDVAdditions.m in Sources */,
 				D885D8051223B1E200F31913 /* NSString+NDVAdditions.m in Sources */,
 				D885D8171223B55400F31913 /* NSObject+NDVPropertyAdditions.m in Sources */,
-				D885D8231223B72700F31913 /* UIImage+NDVAdditions.m in Sources */,
+				D885D8231223B72700F31913 /* UIImage+NDVRoundingAdditions.m in Sources */,
 				D885DA4A1224FAD000F31913 /* UINavigationController+NDVAdditions.m in Sources */,
 				D885DA621224FC6400F31913 /* UIView+NDVAdditions.m in Sources */,
 				D885DA901225059700F31913 /* CAGradientLayer+NDVShadowAdditions.m in Sources */,
@@ -374,6 +395,9 @@
 				D885DC2512260E1B00F31913 /* NSArray+NDVAdditions.m in Sources */,
 				D885DC441226128700F31913 /* NSData+NDVAdditions.m in Sources */,
 				D885DD331226280F00F31913 /* NDVShadowedTableView.m in Sources */,
+				D897302E1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m in Sources */,
+				D89730361237295600DFB1E9 /* UIImage+NDVStretchAdditions.m in Sources */,
+				D897303A12372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

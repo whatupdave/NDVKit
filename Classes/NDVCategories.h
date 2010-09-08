@@ -18,7 +18,10 @@
 
 // UIKit
 #import "UIView+NDVAdditions.h"
-#import "UIImage+NDVAdditions.h"
+#import "UIImage+NDVScalingAdditions.h"
+#import "UIImage+NDVStretchAdditions.h"
+#import "UIImage+NDVAlphaAdditions.h"
+#import "UIImage+NDVRoundingAdditions.h"
 #import "UINavigationController+NDVAdditions.h"
 
 

@@ -1,15 +1,15 @@
 //
-//  UIImage+NDVAdditions.m
+//  UIImage+NDVScalingAdditions.m
 //  NDVKit
 //
-//  Created by Nathan de Vries on 24/08/10.
+//  Created by Nathan de Vries on 8/09/10.
 //  Copyright 2010 Nathan de Vries. All rights reserved.
 //
 
-#import "UIImage+NDVAdditions.h"
+#import "UIImage+NDVScalingAdditions.h"
 
 
-@interface UIImage (NDVPrivateAdditions)
+@interface UIImage (NDVScalingPrivateAdditions)
 
 
 - (UIImage *)imageScaledToSize:(CGSize)newSize
@@ -18,14 +18,11 @@
 
 - (CGAffineTransform)transformForOrientationWithSize:(CGSize)newSize;
 
-- (CGFloat)calculatedLeftCapWidth;
-- (CGFloat)calculatedTopCapHeight;
-
 
 @end
 
 
-@implementation UIImage (NDVAdditions)
+@implementation UIImage (NDVResizeAdditions)
 
 
 - (UIImage *)imageScaledToSizeIgnoringAspectRatio:(CGSize)newSize {
@@ -65,24 +62,6 @@
   } else {
     return [self imageScaledToSizeIgnoringAspectRatio:newSize];
   }
-}
-
-
-- (UIImage *)stretchableImage {
-  return [self stretchableImageWithLeftCapWidth:[self calculatedLeftCapWidth]
-                                   topCapHeight:[self calculatedTopCapHeight]];
-}
-
-
-- (UIImage *)horizontallyStretchableImage {
-  return [self stretchableImageWithLeftCapWidth:[self calculatedLeftCapWidth]
-                                   topCapHeight:0];
-}
-
-
-- (UIImage *)verticallyStretchableImage {
-  return [self stretchableImageWithLeftCapWidth:0
-                                   topCapHeight:[self calculatedTopCapHeight]];
 }
 
 
@@ -190,16 +169,6 @@
   }
 
   return transform;
-}
-
-
-- (CGFloat)calculatedLeftCapWidth {
-  return ((self.size.width - 1.0f) / 2.0f);
-}
-
-
-- (CGFloat)calculatedTopCapHeight {
-  return ((self.size.height - 1.0f) / 2.0f);
 }
 
 
