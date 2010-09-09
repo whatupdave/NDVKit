@@ -10,17 +10,17 @@
 
 
 static BOOL TypeCodeIsCharArray(const char* typeCode) {
-	NSUInteger lastCharOffset = strlen(typeCode) - 1;
-	NSUInteger secondToLastCharOffset = lastCharOffset - 1 ;
+  NSUInteger lastCharOffset = strlen(typeCode) - 1;
+  NSUInteger secondToLastCharOffset = lastCharOffset - 1 ;
 
-	BOOL isCharArray = (typeCode[0] == '[' &&
+  BOOL isCharArray = (typeCode[0] == '[' &&
                       typeCode[secondToLastCharOffset] == 'c' &&
                       typeCode[lastCharOffset] == ']');
 
-	for (NSUInteger i = 1; i < secondToLastCharOffset; i++)
-		isCharArray = isCharArray && isdigit(typeCode[i]);
+  for (NSUInteger i = 1; i < secondToLastCharOffset; i++)
+    isCharArray = isCharArray && isdigit(typeCode[i]);
 
-	return isCharArray;
+  return isCharArray;
 }
 
 
