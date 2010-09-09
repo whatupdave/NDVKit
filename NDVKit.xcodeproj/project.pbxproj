@@ -41,6 +41,8 @@
 		D885DCF112261C8600F31913 /* NDVMemoryMangementMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885DD321226280F00F31913 /* NDVShadowedTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DD301226280F00F31913 /* NDVShadowedTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885DD331226280F00F31913 /* NDVShadowedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DD311226280F00F31913 /* NDVShadowedTableView.m */; };
+		D894A99A1238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D894A9981238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h */; };
+		D894A99B1238C43E005941FA /* NSString+NDVTypeEncodingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D894A9991238C43E005941FA /* NSString+NDVTypeEncodingAdditions.m */; };
 		D897302D1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D897302B1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D897302E1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D897302C1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m */; };
 		D89730351237295600DFB1E9 /* UIImage+NDVStretchAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D89730331237295600DFB1E9 /* UIImage+NDVStretchAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -106,6 +108,8 @@
 		D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVMemoryMangementMacros.h; sourceTree = "<group>"; };
 		D885DD301226280F00F31913 /* NDVShadowedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVShadowedTableView.h; sourceTree = "<group>"; };
 		D885DD311226280F00F31913 /* NDVShadowedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDVShadowedTableView.m; sourceTree = "<group>"; };
+		D894A9981238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NDVTypeEncodingAdditions.h"; sourceTree = "<group>"; };
+		D894A9991238C43E005941FA /* NSString+NDVTypeEncodingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NDVTypeEncodingAdditions.m"; sourceTree = "<group>"; };
 		D897302B1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NDVScalingAdditions.h"; sourceTree = "<group>"; };
 		D897302C1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NDVScalingAdditions.m"; sourceTree = "<group>"; };
 		D89730331237295600DFB1E9 /* UIImage+NDVStretchAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NDVStretchAdditions.h"; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 				D885D8151223B55400F31913 /* NSObject+NDVPropertyAdditions.m */,
 				D885D8021223B1E200F31913 /* NSString+NDVAdditions.h */,
 				D885D8031223B1E200F31913 /* NSString+NDVAdditions.m */,
+				D894A9981238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h */,
+				D894A9991238C43E005941FA /* NSString+NDVTypeEncodingAdditions.m */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				D897302D1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h in Headers */,
 				D89730351237295600DFB1E9 /* UIImage+NDVStretchAdditions.h in Headers */,
 				D897303912372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.h in Headers */,
+				D894A99A1238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +405,7 @@
 				D897302E1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m in Sources */,
 				D89730361237295600DFB1E9 /* UIImage+NDVStretchAdditions.m in Sources */,
 				D897303A12372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.m in Sources */,
+				D894A99B1238C43E005941FA /* NSString+NDVTypeEncodingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

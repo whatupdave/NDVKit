@@ -11,6 +11,7 @@
 #import "NSObject+NDVPropertyAdditions.h"
 #import "NSData+NDVAdditions.h"
 #import "NSString+NDVAdditions.h"
+#import "NSString+NDVTypeEncodingAdditions.h"
 #import "NSDate+NDVCalendarAdditions.h"
 #import "NSDateFormatter+NDVAdditions.h"
 #import "NSArray+NDVAdditions.h"
