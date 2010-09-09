@@ -40,7 +40,7 @@
   if (_STRING_VALUE_) { \
     ALog(@"%s = %@", #_EXPRESSION_, _STRING_VALUE_); \
   } else { \
-    ALog(@"Unknown type code (%s) for expression %s", _TYPE_CODE_, #_EXPRESSION_); \
+    ALog(@"Unknown type code (%s) for expression %s", @encode(__typeof__(_EXPRESSION_)), #_EXPRESSION_); \
   } \
 } while (0)
 
