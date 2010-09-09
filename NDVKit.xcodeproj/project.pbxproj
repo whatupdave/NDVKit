@@ -408,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D885D94C1224EE6300F31913 /* Build-Debug.xcconfig */;
 			buildSettings = {
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};
