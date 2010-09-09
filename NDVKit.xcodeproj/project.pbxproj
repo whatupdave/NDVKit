@@ -41,7 +41,7 @@
 		D885DCF112261C8600F31913 /* NDVMemoryMangementMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885DD321226280F00F31913 /* NDVShadowedTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DD301226280F00F31913 /* NDVShadowedTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885DD331226280F00F31913 /* NDVShadowedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DD311226280F00F31913 /* NDVShadowedTableView.m */; };
-		D894A99A1238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D894A9981238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h */; };
+		D894A99A1238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D894A9981238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D894A99B1238C43E005941FA /* NSString+NDVTypeEncodingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D894A9991238C43E005941FA /* NSString+NDVTypeEncodingAdditions.m */; };
 		D897302D1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D897302B1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D897302E1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D897302C1237284800DFB1E9 /* UIImage+NDVScalingAdditions.m */; };
