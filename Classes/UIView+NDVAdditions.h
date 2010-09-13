@@ -35,6 +35,9 @@ extern NSUInteger const UIViewAutoresizingFlexibleBottomRight;
 - (CGSize)size;
 - (void)setSize:(CGSize)size;
 
+- (CGPoint)origin;
+- (void)setOrigin:(CGPoint)origin;
+
 - (void)removeAllSubviews;
 
 - (NSArray *)descendantsOrSelfWithClass:(Class)theClass;

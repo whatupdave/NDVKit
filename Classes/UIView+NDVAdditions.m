@@ -7,6 +7,7 @@
 //
 
 #import "UIView+NDVAdditions.h"
+#import "CGGeometry+NDVAdditions.h"
 
 
 NSUInteger const UIViewAutoresizingFlexibleBottomRight = (UIViewAutoresizingFlexibleWidth |
@@ -23,9 +24,7 @@ NSUInteger const UIViewAutoresizingFlexibleBottomRight = (UIViewAutoresizingFlex
 
 
 - (void)setLeft:(CGFloat)newLeftX {
-  CGRect frame = self.frame;
-  frame.origin.x = newLeftX;
-  self.frame = frame;
+  self.frame = CGRectSetX(self.frame, newLeftX);
 }
 
 
@@ -35,21 +34,17 @@ NSUInteger const UIViewAutoresizingFlexibleBottomRight = (UIViewAutoresizingFlex
 
 
 - (void)setTop:(CGFloat)newTopY {
-  CGRect frame = self.frame;
-  frame.origin.y = newTopY;
-  self.frame = frame;
+  self.frame = CGRectSetY(self.frame, newTopY);
 }
 
 
 - (CGFloat)right {
-  return self.frame.origin.x + self.frame.size.width;
+  return self.frame.origin.x + self.width;
 }
 
 
 - (void)setRight:(CGFloat)newRightX {
-  CGRect frame = self.frame;
-  frame.origin.x = newRightX - frame.size.width;
-  self.frame = frame;
+  self.frame = CGRectSetX(self.frame, (newRightX - self.width));
 }
 
 
@@ -59,9 +54,7 @@ NSUInteger const UIViewAutoresizingFlexibleBottomRight = (UIViewAutoresizingFlex
 
 
 - (void)setBottom:(CGFloat)newBottomY {
-  CGRect frame = self.frame;
-  frame.origin.y = newBottomY - frame.size.height;
-  self.frame = frame;
+  self.frame = CGRectSetY(self.frame, (newBottomY - self.height));
 }
 
 
@@ -71,9 +64,7 @@ NSUInteger const UIViewAutoresizingFlexibleBottomRight = (UIViewAutoresizingFlex
 
 
 - (void)setWidth:(CGFloat)width {
-  CGRect frame = self.frame;
-  frame.size.width = width;
-  self.frame = frame;
+  self.frame = CGRectSetWidth(self.frame, width);
 }
 
 
@@ -83,9 +74,7 @@ NSUInteger const UIViewAutoresizingFlexibleBottomRight = (UIViewAutoresizingFlex
 
 
 - (void)setHeight:(CGFloat)height {
-  CGRect frame = self.frame;
-  frame.size.height = height;
-  self.frame = frame;
+  self.frame = CGRectSetHeight(self.frame, height);
 }
 
 
@@ -95,9 +84,17 @@ NSUInteger const UIViewAutoresizingFlexibleBottomRight = (UIViewAutoresizingFlex
 
 
 - (void)setSize:(CGSize)size {
-  CGRect frame = self.frame;
-  frame.size = size;
-  self.frame = frame;
+  self.frame = CGRectSetSize(self.frame, size);
+}
+
+
+- (CGPoint)origin {
+  return self.frame.origin;
+}
+
+
+- (void)setOrigin:(CGPoint)origin {
+  self.frame = CGRectSetOrigin(self.frame, origin);
 }
 
 

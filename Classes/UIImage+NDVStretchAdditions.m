@@ -9,16 +9,6 @@
 #import "UIImage+NDVStretchAdditions.h"
 
 
-@interface UIImage (NDVStretchPrivateAdditions)
-
-
-- (CGFloat)calculatedLeftCapWidth;
-- (CGFloat)calculatedTopCapHeight;
-
-
-@end
-
-
 @implementation UIImage (NDVStretchAdditions)
 
 
@@ -38,10 +28,6 @@
   return [self stretchableImageWithLeftCapWidth:0
                                    topCapHeight:[self calculatedTopCapHeight]];
 }
-
-
-# pragma mark -
-# pragma mark Private helper methods
 
 
 - (CGFloat)calculatedLeftCapWidth {

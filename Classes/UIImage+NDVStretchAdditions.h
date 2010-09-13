@@ -16,5 +16,8 @@
 - (UIImage *)horizontallyStretchableImage;
 - (UIImage *)verticallyStretchableImage;
 
+- (CGFloat)calculatedLeftCapWidth;
+- (CGFloat)calculatedTopCapHeight;
+
 
 @end
