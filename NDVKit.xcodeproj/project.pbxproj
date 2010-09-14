@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AA747D9F0F9514B9006C5449 /* NDVKit_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* NDVKit_Prefix.pch */; };
+		D819A5EE123F388E002150E2 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = D819A5E5123F388E002150E2 /* crypt.h */; };
+		D819A5EF123F388E002150E2 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D819A5E6123F388E002150E2 /* ioapi.c */; };
+		D819A5F0123F388E002150E2 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = D819A5E7123F388E002150E2 /* ioapi.h */; };
+		D819A5F1123F388E002150E2 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = D819A5E8123F388E002150E2 /* mztools.c */; };
+		D819A5F2123F388E002150E2 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = D819A5E9123F388E002150E2 /* mztools.h */; };
+		D819A5F3123F388E002150E2 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = D819A5EA123F388E002150E2 /* unzip.c */; };
+		D819A5F4123F388E002150E2 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = D819A5EB123F388E002150E2 /* unzip.h */; };
+		D819A5F5123F388E002150E2 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D819A5EC123F388E002150E2 /* zip.c */; };
+		D819A5F6123F388E002150E2 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = D819A5ED123F388E002150E2 /* zip.h */; };
 		D885D7BF1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D7BD1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885D7C01223A7D300F31913 /* NSDate+NDVCalendarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885D7BE1223A7D300F31913 /* NSDate+NDVCalendarAdditions.m */; };
 		D885D7FC1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D7FA1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +63,15 @@
 /* Begin PBXFileReference section */
 		AA747D9E0F9514B9006C5449 /* NDVKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVKit_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		D2AAC07E0554694100DB518D /* libNDVKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNDVKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D819A5E5123F388E002150E2 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Dependencies/minizip/crypt.h; sourceTree = SOURCE_ROOT; };
+		D819A5E6123F388E002150E2 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = Dependencies/minizip/ioapi.c; sourceTree = SOURCE_ROOT; };
+		D819A5E7123F388E002150E2 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Dependencies/minizip/ioapi.h; sourceTree = SOURCE_ROOT; };
+		D819A5E8123F388E002150E2 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = Dependencies/minizip/mztools.c; sourceTree = SOURCE_ROOT; };
+		D819A5E9123F388E002150E2 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = Dependencies/minizip/mztools.h; sourceTree = SOURCE_ROOT; };
+		D819A5EA123F388E002150E2 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = Dependencies/minizip/unzip.c; sourceTree = SOURCE_ROOT; };
+		D819A5EB123F388E002150E2 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Dependencies/minizip/unzip.h; sourceTree = SOURCE_ROOT; };
+		D819A5EC123F388E002150E2 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zip.c; path = Dependencies/minizip/zip.c; sourceTree = SOURCE_ROOT; };
+		D819A5ED123F388E002150E2 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Dependencies/minizip/zip.h; sourceTree = SOURCE_ROOT; };
 		D885D7BD1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NDVCalendarAdditions.h"; sourceTree = "<group>"; };
 		D885D7BE1223A7D300F31913 /* NSDate+NDVCalendarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NDVCalendarAdditions.m"; sourceTree = "<group>"; };
 		D885D7FA1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+NDVAdditions.h"; sourceTree = "<group>"; };
@@ -168,6 +186,22 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		D819A5DD123F386E002150E2 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				D819A5E5123F388E002150E2 /* crypt.h */,
+				D819A5E6123F388E002150E2 /* ioapi.c */,
+				D819A5E7123F388E002150E2 /* ioapi.h */,
+				D819A5E8123F388E002150E2 /* mztools.c */,
+				D819A5E9123F388E002150E2 /* mztools.h */,
+				D819A5EA123F388E002150E2 /* unzip.c */,
+				D819A5EB123F388E002150E2 /* unzip.h */,
+				D819A5EC123F388E002150E2 /* zip.c */,
+				D819A5ED123F388E002150E2 /* zip.h */,
+			);
+			name = minizip;
+			sourceTree = "<group>";
+		};
 		D885D82A1223BC4700F31913 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +301,7 @@
 		D885DC7C1226170D00F31913 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				D819A5DD123F386E002150E2 /* minizip */,
 				D885DC7E1226172A00F31913 /* Inkscape-Curvefit */,
 			);
 			name = Dependencies;
@@ -336,6 +371,11 @@
 				D89730351237295600DFB1E9 /* UIImage+NDVStretchAdditions.h in Headers */,
 				D897303912372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.h in Headers */,
 				D894A99A1238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h in Headers */,
+				D819A5EE123F388E002150E2 /* crypt.h in Headers */,
+				D819A5F0123F388E002150E2 /* ioapi.h in Headers */,
+				D819A5F2123F388E002150E2 /* mztools.h in Headers */,
+				D819A5F4123F388E002150E2 /* unzip.h in Headers */,
+				D819A5F6123F388E002150E2 /* zip.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +446,10 @@
 				D89730361237295600DFB1E9 /* UIImage+NDVStretchAdditions.m in Sources */,
 				D897303A12372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.m in Sources */,
 				D894A99B1238C43E005941FA /* NSString+NDVTypeEncodingAdditions.m in Sources */,
+				D819A5EF123F388E002150E2 /* ioapi.c in Sources */,
+				D819A5F1123F388E002150E2 /* mztools.c in Sources */,
+				D819A5F3123F388E002150E2 /* unzip.c in Sources */,
+				D819A5F5123F388E002150E2 /* zip.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
