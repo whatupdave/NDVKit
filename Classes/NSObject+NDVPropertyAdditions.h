@@ -19,3 +19,17 @@
 
 
 @end
+
+
+# define SYNTHESIZE_ENCODER_AND_DECODER_FOR_ALL_PROPERTIES() \
+- (id)initWithCoder:(NSCoder *)decoder { \
+  if ((self = [self init])) { \
+    [self decodeAllPropertiesWithCoder:decoder]; \
+  } \
+  return self; \
+} \
+\
+\
+- (void)encodeWithCoder:(NSCoder *)encoder { \
+  [self encodeAllPropertiesWithCoder:encoder]; \
+}
