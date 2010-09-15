@@ -54,6 +54,6 @@ static __CLASS_NAME__* sharedInstance = nil; \
 \
 - (id)copyWithZone:(NSZone *)zone { return self; }\
 - (id)retain { return self; } \
-- (id)retainCount { return NSUIntegerMax; } \
-- (id)release { } \
+- (NSUInteger)retainCount { return NSUIntegerMax; } \
+- (void)release { } \
 - (id)autorelease { return self; }
