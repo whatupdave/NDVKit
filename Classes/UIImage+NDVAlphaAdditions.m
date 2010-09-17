@@ -37,13 +37,15 @@
   size_t width = CGImageGetWidth(currentImageRef);
   size_t height = CGImageGetHeight(currentImageRef);
 
+  CGColorSpaceRef rgbColorSpaceRef = CGColorSpaceCreateDeviceRGB();
   CGContextRef bitmapContextRef = CGBitmapContextCreate(NULL,
                                                         width,
                                                         height,
                                                         8,
                                                         0,
-                                                        CGImageGetColorSpace(currentImageRef),
+                                                        rgbColorSpaceRef,
                                                         kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst);
+  CGColorSpaceRelease(rgbColorSpaceRef);
 
   CGContextDrawImage(bitmapContextRef, CGRectMake(0, 0, width, height), currentImageRef);
   CGImageRef imageRefWithAlphaChannel = CGBitmapContextCreateImage(bitmapContextRef);

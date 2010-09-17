@@ -12,12 +12,10 @@
 
 @interface UIImage (NDVPrivateRoundingAdditions)
 
-
 - (void)addRoundedRectToPath:(CGRect)rect
                      context:(CGContextRef)context
                    ovalWidth:(CGFloat)ovalWidth
                   ovalHeight:(CGFloat)ovalHeight;
-
 
 @end
 
@@ -34,14 +32,13 @@
   size_t originalWidth = CGImageGetWidth(originalImageRef);
   size_t originalHeight = CGImageGetHeight(originalImageRef);
 
-  // Build a context that's the same dimensions as the new size
   CGContextRef bitmapContextRef = CGBitmapContextCreate(NULL,
-                                               originalWidth,
-                                               originalHeight,
-                                               CGImageGetBitsPerComponent(originalImageRef),
-                                               0,
-                                               CGImageGetColorSpace(originalImageRef),
-                                               CGImageGetBitmapInfo(originalImageRef));
+                                                        originalWidth,
+                                                        originalHeight,
+                                                        CGImageGetBitsPerComponent(originalImageRef),
+                                                        0,
+                                                        CGImageGetColorSpace(originalImageRef),
+                                                        CGImageGetBitmapInfo(originalImageRef));
 
   CGContextBeginPath(bitmapContextRef); {
 
@@ -54,14 +51,11 @@
 
   CGContextClip(bitmapContextRef);
 
-  // Draw the image to the context; the clipping path will make anything outside the rounded rect transparent
   CGContextDrawImage(bitmapContextRef, CGRectMake(0, 0, originalWidth, originalHeight), originalImageRef);
 
-  // Create a CGImage from the context
   CGImageRef clippedImageRef = CGBitmapContextCreateImage(bitmapContextRef);
   CGContextRelease(bitmapContextRef);
 
-  // Create a UIImage from the CGImage
   UIImage* roundedImage = [UIImage imageWithCGImage:clippedImageRef];
   CGImageRelease(clippedImageRef);
 
