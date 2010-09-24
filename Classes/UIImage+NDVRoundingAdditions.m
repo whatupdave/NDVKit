@@ -10,12 +10,17 @@
 #import "UIImage+NDVAlphaAdditions.h"
 
 
+NDVRectPathRounding NDVRectPathRoundingTopCorners    = (NDVRectPathRoundingTopLeftCorner | NDVRectPathRoundingTopRightCorner);
+NDVRectPathRounding NDVRectPathRoundingBottomCorners = (NDVRectPathRoundingBottomLeftCorner | NDVRectPathRoundingBottomRightCorner);
+NDVRectPathRounding NDVRectPathRoundingLeftCorners   = (NDVRectPathRoundingTopLeftCorner | NDVRectPathRoundingBottomLeftCorner);
+NDVRectPathRounding NDVRectPathRoundingRightCorners  = (NDVRectPathRoundingTopRightCorner | NDVRectPathRoundingBottomRightCorner);
+NDVRectPathRounding NDVRectPathRoundingAllCorners    = (NDVRectPathRoundingTopRightCorner | NDVRectPathRoundingBottomRightCorner |
+                                                        NDVRectPathRoundingBottomLeftCorner | NDVRectPathRoundingTopLeftCorner);
+
+
 @interface UIImage (NDVPrivateRoundingAdditions)
 
-- (void)addRoundedRectToPath:(CGRect)rect
-                     context:(CGContextRef)context
-                   ovalWidth:(CGFloat)ovalWidth
-                  ovalHeight:(CGFloat)ovalHeight;
+void NDVCGContextAddRoundedRectPath(CGContextRef c, CGRect rect, CGFloat ovalWidth, CGFloat ovalHeight, NDVRectPathRounding roundingMask);
 
 @end
 
@@ -24,7 +29,16 @@
 
 
 - (UIImage *)imageByRoundingCornersWithRadius:(CGFloat)cornerRadius
-                                   borderSize:(CGFloat)borderSize {
+                                   cornerMask:(NDVRectPathRounding)cornerMask {
+
+  return [self imageByRoundingCornersWithRadius:cornerRadius
+                                     borderSize:0.f
+                                     cornerMask:cornerMask];
+}
+
+- (UIImage *)imageByRoundingCornersWithRadius:(CGFloat)cornerRadius
+                                   borderSize:(CGFloat)borderSize
+                                   cornerMask:(NDVRectPathRounding)cornerMask {
 
   UIImage* originalImage = [self imageByAddingAlphaChannel];
   CGImageRef originalImageRef = originalImage.CGImage;
@@ -40,14 +54,11 @@
                                                         CGImageGetColorSpace(originalImageRef),
                                                         CGImageGetBitmapInfo(originalImageRef));
 
-  CGContextBeginPath(bitmapContextRef); {
-
-    [self addRoundedRectToPath:CGRectMake(borderSize, borderSize, originalWidth - borderSize * 2, originalHeight - borderSize * 2)
-                       context:bitmapContextRef
-                     ovalWidth:cornerRadius
-                    ovalHeight:cornerRadius];
-
-  } CGContextClosePath(bitmapContextRef);
+  NDVCGContextAddRoundedRectPath(bitmapContextRef,
+                                 CGRectMake(borderSize, borderSize, originalWidth - borderSize * 2, originalHeight - borderSize * 2),
+                                 cornerRadius,
+                                 cornerRadius,
+                                 cornerMask);
 
   CGContextClip(bitmapContextRef);
 
@@ -63,32 +74,34 @@
 }
 
 
-# pragma mark -
-# pragma mark Private helper methods
-
-
-- (void)addRoundedRectToPath:(CGRect)rect
-                     context:(CGContextRef)context
-                   ovalWidth:(CGFloat)ovalWidth
-                  ovalHeight:(CGFloat)ovalHeight {
-
-  if (ovalWidth == 0 || ovalHeight == 0) {
-    CGContextAddRect(context, rect);
+void NDVCGContextAddRoundedRectPath(CGContextRef c, CGRect rect, CGFloat ovalWidth, CGFloat ovalHeight, NDVRectPathRounding roundingMask) {
+  if (ovalWidth == 0 || ovalHeight == 0 || roundingMask == NDVRectPathRoundingNone) {
+    CGContextBeginPath(c); {
+      CGContextAddRect(c, rect);
+    } CGContextClosePath(c);
     return;
   }
 
-  CGContextSaveGState(context);
-  CGContextTranslateCTM(context, CGRectGetMinX(rect), CGRectGetMinY(rect));
-  CGContextScaleCTM(context, ovalWidth, ovalHeight);
-  CGFloat fw = CGRectGetWidth(rect) / ovalWidth;
-  CGFloat fh = CGRectGetHeight(rect) / ovalHeight;
-  CGContextMoveToPoint(context, fw, fh/2);
-  CGContextAddArcToPoint(context, fw, fh, fw/2, fh, 1); // top right
-  CGContextAddArcToPoint(context, 0, fh, 0, fh/2, 1); // bottom right
-  CGContextAddArcToPoint(context, 0, 0, fw/2, 0, 1); // bottom left
-  CGContextAddArcToPoint(context, fw, 0, fw, fh/2, 1); // top left
-  CGContextClosePath(context);
-  CGContextRestoreGState(context);
+  CGContextSaveGState(c); {
+
+    CGContextBeginPath(c); {
+
+      CGContextTranslateCTM(c, CGRectGetMinX(rect), CGRectGetMinY(rect));
+      CGContextScaleCTM(c, ovalWidth, ovalHeight);
+
+      CGFloat fw = CGRectGetWidth(rect) / ovalWidth;
+      CGFloat fh = CGRectGetHeight(rect) / ovalHeight;
+
+      CGContextMoveToPoint(c, fw, fh/2);
+
+      CGContextAddArcToPoint(c, fw, fh, fw/2, fh, (roundingMask & NDVRectPathRoundingTopRightCorner) ? 1 : 0);
+      CGContextAddArcToPoint(c, 0, fh, 0, fh/2, (roundingMask & NDVRectPathRoundingTopLeftCorner) ? 1 : 0);
+      CGContextAddArcToPoint(c, 0, 0, fw/2, 0, (roundingMask & NDVRectPathRoundingBottomLeftCorner) ? 1 : 0);
+      CGContextAddArcToPoint(c, fw, 0, fw, fh/2, (roundingMask & NDVRectPathRoundingBottomRightCorner) ? 1 : 0);
+
+    } CGContextClosePath(c);
+
+  } CGContextRestoreGState(c);
 }
 
 

@@ -10,19 +10,31 @@
 #import <UIKit/UIKit.h>
 
 
+typedef enum _NDVRectPathRounding {
+  NDVRectPathRoundingNone              = 0,
+  NDVRectPathRoundingTopRightCorner    = 1 << 0,
+  NDVRectPathRoundingBottomRightCorner = 1 << 1,
+  NDVRectPathRoundingBottomLeftCorner  = 1 << 2,
+  NDVRectPathRoundingTopLeftCorner     = 1 << 3,
+} NDVRectPathRounding;
+
+
+extern NDVRectPathRounding NDVRectPathRoundingTopCorners;
+extern NDVRectPathRounding NDVRectPathRoundingBottomCorners;
+extern NDVRectPathRounding NDVRectPathRoundingLeftCorners;
+extern NDVRectPathRounding NDVRectPathRoundingRightCorners;
+extern NDVRectPathRounding NDVRectPathRoundingAllCorners;
+
+
 @interface UIImage (NDVRoundingAdditions)
 
 
 - (UIImage *)imageByRoundingCornersWithRadius:(CGFloat)cornerRadius
-                                   borderSize:(CGFloat)borderSize;
+                                   cornerMask:(NDVRectPathRounding)cornerMask;
 
-/*
-- (UIImage *)imageByRoundingCornersWithTopLeftRadius:(NSInteger)topLeftRadius
-                                      topRightRadius:(NSInteger)topRightRadius
-                                   bottomRightRadius:(NSInteger)bottomRightRadius
-                                    bottomLeftRadius:(NSInteger)bottomLeftRadius
-                                          borderSize:(NSInteger)borderSize;
-*/
+- (UIImage *)imageByRoundingCornersWithRadius:(CGFloat)cornerRadius
+                                   borderSize:(CGFloat)borderSize
+                                   cornerMask:(NDVRectPathRounding)cornerMask;
 
 
 @end
