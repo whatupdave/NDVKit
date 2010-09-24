@@ -19,6 +19,7 @@
 		D819A5F6123F388E002150E2 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = D819A5ED123F388E002150E2 /* zip.h */; };
 		D819A611123F3CD0002150E2 /* NDVZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = D819A60F123F3CD0002150E2 /* NDVZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D819A612123F3CD0002150E2 /* NDVZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D819A610123F3CD0002150E2 /* NDVZipArchive.m */; };
+		D8728572124C6D2F00C82359 /* NDVAccessorMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D8728571124C6D2F00C82359 /* NDVAccessorMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885D7BF1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D7BD1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885D7C01223A7D300F31913 /* NSDate+NDVCalendarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885D7BE1223A7D300F31913 /* NSDate+NDVCalendarAdditions.m */; };
 		D885D7FC1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885D7FA1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,6 +77,7 @@
 		D819A5ED123F388E002150E2 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Dependencies/minizip/zip.h; sourceTree = SOURCE_ROOT; };
 		D819A60F123F3CD0002150E2 /* NDVZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVZipArchive.h; sourceTree = "<group>"; };
 		D819A610123F3CD0002150E2 /* NDVZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDVZipArchive.m; sourceTree = "<group>"; };
+		D8728571124C6D2F00C82359 /* NDVAccessorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVAccessorMacros.h; sourceTree = "<group>"; };
 		D885D7BD1223A7D300F31913 /* NSDate+NDVCalendarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NDVCalendarAdditions.h"; sourceTree = "<group>"; };
 		D885D7BE1223A7D300F31913 /* NSDate+NDVCalendarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NDVCalendarAdditions.m"; sourceTree = "<group>"; };
 		D885D7FA1223B0C100F31913 /* NSDateFormatter+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+NDVAdditions.h"; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */,
 				D819A60F123F3CD0002150E2 /* NDVZipArchive.h */,
 				D819A610123F3CD0002150E2 /* NDVZipArchive.m */,
+				D8728571124C6D2F00C82359 /* NDVAccessorMacros.h */,
 			);
 			name = Miscellaneous;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				D819A5F4123F388E002150E2 /* unzip.h in Headers */,
 				D819A5F6123F388E002150E2 /* zip.h in Headers */,
 				D819A611123F3CD0002150E2 /* NDVZipArchive.h in Headers */,
+				D8728572124C6D2F00C82359 /* NDVAccessorMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
