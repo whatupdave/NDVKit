@@ -16,7 +16,7 @@
   static NSDateFormatter* formatter = nil;
 
   if (formatter == nil) {
-    formatter = [[[NSDateFormatter alloc] init] autorelease];
+    formatter = [[NSDateFormatter alloc] init];
     formatter.locale = [[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"] autorelease];
   }
 
