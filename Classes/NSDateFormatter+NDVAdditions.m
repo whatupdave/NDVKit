@@ -13,13 +13,8 @@
 
 
 + (id)unlocalisedFormatter {
-  static NSDateFormatter* formatter = nil;
-
-  if (formatter == nil) {
-    formatter = [[NSDateFormatter alloc] init];
-    formatter.locale = [[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"] autorelease];
-  }
-
+  NSDateFormatter* formatter = [[[NSDateFormatter alloc] init] autorelease];
+  formatter.locale = [[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"] autorelease];
   return formatter;
 }
 
