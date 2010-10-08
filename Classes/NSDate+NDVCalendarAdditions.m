@@ -68,22 +68,15 @@
 
 
 - (NSDateComponents *)gregorianCalendarComponents {
-  static NSDateComponents* components = nil;
+  NSCalendar* calendar = [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease];
+  NSUInteger unitFlags = (NSEraCalendarUnit | NSYearCalendarUnit |
+                          NSMonthCalendarUnit | NSDayCalendarUnit |
+                          NSHourCalendarUnit | NSMinuteCalendarUnit |
+                          NSSecondCalendarUnit | NSWeekCalendarUnit |
+                          NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit);
 
-  if (components == nil) {
-    NSCalendar* calendar = [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease];
-
-    NSUInteger unitFlags = (NSEraCalendarUnit | NSYearCalendarUnit |
-                            NSMonthCalendarUnit | NSDayCalendarUnit |
-                            NSHourCalendarUnit | NSMinuteCalendarUnit |
-                            NSSecondCalendarUnit | NSWeekCalendarUnit |
-                            NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit);
-
-    components = [calendar components:unitFlags
-                             fromDate:self];
-  }
-
-  return components;
+  return [calendar components:unitFlags
+                     fromDate:self];
 }
 
 
