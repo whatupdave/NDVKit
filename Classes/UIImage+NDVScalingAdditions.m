@@ -73,15 +73,6 @@
                  withTransform:(CGAffineTransform)transform
                 drawTransposed:(BOOL)transpose {
 
-  BOOL shouldScale = NO;
-  CGFloat newScale = 1.0f;
-
-  if ([UIScreen instancesRespondToSelector:@selector(scale)]) {
-		shouldScale = YES;
-		newScale = [[UIScreen mainScreen] scale];
-		newSize = CGSizeMake(newSize.width * newScale, newSize.height * newScale);
-	}
-
   CGRect newRect = CGRectIntegral(CGRectMake(0, 0, newSize.width, newSize.height));
   CGRect transposedRect = CGRectMake(0, 0, newRect.size.height, newRect.size.width);
   CGImageRef imageRef = self.CGImage;
@@ -106,17 +97,7 @@
   CGContextDrawImage(bitmap, transpose ? transposedRect : newRect, imageRef);
 
   CGImageRef newImageRef = CGBitmapContextCreateImage(bitmap);
-  UIImage* newImage;
-
-  if (shouldScale) {
-    newImage = [UIImage imageWithCGImage:newImageRef];
-
-  } else {
-    newImage = [UIImage imageWithCGImage:newImageRef
-                                   scale:newScale
-                             orientation:UIImageOrientationUp];
-  }
-
+  UIImage* newImage = [UIImage imageWithCGImage:newImageRef];
 
   CGContextRelease(bitmap);
   CGImageRelease(newImageRef);
