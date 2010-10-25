@@ -1,5 +1,5 @@
 //
-//  CGPath+NDVAdditions.h
+//  CGPath+NDVCurveFitAdditions.h
 //  NDVKit
 //
 //  Created by Nathan de Vries on 26/08/10.

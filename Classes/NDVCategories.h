@@ -33,3 +33,5 @@
 // CoreGraphics
 #import "CGGeometry+NDVAdditions.h"
 #import "CGImage+NDVAdditions.h"
+#import "CGPath+NDVSVGAdditions.h"
+#import "CGPath+NDVDebuggingAdditions.h"

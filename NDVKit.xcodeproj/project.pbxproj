@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AA747D9F0F9514B9006C5449 /* NDVKit_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* NDVKit_Prefix.pch */; };
+		D80F1476127551F200136506 /* CGPath+NDVDebuggingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D80F1474127551F200136506 /* CGPath+NDVDebuggingAdditions.h */; };
+		D80F1477127551F200136506 /* CGPath+NDVDebuggingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F1475127551F200136506 /* CGPath+NDVDebuggingAdditions.m */; };
+		D80F14801275541700136506 /* NDVCGPathBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D80F147E1275541700136506 /* NDVCGPathBuilder.h */; };
+		D80F14811275541700136506 /* NDVCGPathBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F147F1275541700136506 /* NDVCGPathBuilder.m */; };
+		D80F14A91275672600136506 /* CGPath+NDVSVGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D80F14A71275672600136506 /* CGPath+NDVSVGAdditions.h */; };
+		D80F14AA1275672600136506 /* CGPath+NDVSVGAdditions.m.rl in Sources */ = {isa = PBXBuildFile; fileRef = D80F14A81275672600136506 /* CGPath+NDVSVGAdditions.m.rl */; };
 		D819A5EE123F388E002150E2 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = D819A5E5123F388E002150E2 /* crypt.h */; };
 		D819A5EF123F388E002150E2 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D819A5E6123F388E002150E2 /* ioapi.c */; };
 		D819A5F0123F388E002150E2 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = D819A5E7123F388E002150E2 /* ioapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,9 +69,29 @@
 		D897303A12372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D897303812372A3E00DFB1E9 /* UIImage+NDVAlphaAdditions.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		D80F14B512756A1A00136506 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.rl";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}",
+			);
+			script = "/usr/local/bin/ragel ${INPUT_FILE_PATH} -G2 -o ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
 		AA747D9E0F9514B9006C5449 /* NDVKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVKit_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		D2AAC07E0554694100DB518D /* libNDVKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNDVKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80F1474127551F200136506 /* CGPath+NDVDebuggingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPath+NDVDebuggingAdditions.h"; sourceTree = "<group>"; };
+		D80F1475127551F200136506 /* CGPath+NDVDebuggingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGPath+NDVDebuggingAdditions.m"; sourceTree = "<group>"; };
+		D80F147E1275541700136506 /* NDVCGPathBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVCGPathBuilder.h; sourceTree = "<group>"; };
+		D80F147F1275541700136506 /* NDVCGPathBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDVCGPathBuilder.m; sourceTree = "<group>"; };
+		D80F14A71275672600136506 /* CGPath+NDVSVGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPath+NDVSVGAdditions.h"; sourceTree = "<group>"; };
+		D80F14A81275672600136506 /* CGPath+NDVSVGAdditions.m.rl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CGPath+NDVSVGAdditions.m.rl"; sourceTree = "<group>"; };
 		D819A5E5123F388E002150E2 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Dependencies/minizip/crypt.h; sourceTree = SOURCE_ROOT; };
 		D819A5E6123F388E002150E2 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = Dependencies/minizip/ioapi.c; sourceTree = SOURCE_ROOT; };
 		D819A5E7123F388E002150E2 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Dependencies/minizip/ioapi.h; sourceTree = SOURCE_ROOT; };
@@ -127,8 +153,8 @@
 		D885DC9C1226175500F31913 /* transforms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transforms.cpp; path = "Dependencies/inkscsape-curvefit/transforms.cpp"; sourceTree = SOURCE_ROOT; };
 		D885DC9D1226175500F31913 /* transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transforms.h; path = "Dependencies/inkscsape-curvefit/transforms.h"; sourceTree = SOURCE_ROOT; };
 		D885DC9E1226175500F31913 /* translate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = translate.h; path = "Dependencies/inkscsape-curvefit/translate.h"; sourceTree = SOURCE_ROOT; };
-		D885DCB4122617BD00F31913 /* CGPath+NDVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPath+NDVAdditions.h"; sourceTree = "<group>"; };
-		D885DCB5122617BD00F31913 /* CGPath+NDVAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CGPath+NDVAdditions.mm"; sourceTree = "<group>"; };
+		D885DCB4122617BD00F31913 /* CGPath+NDVCurveFitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPath+NDVCurveFitAdditions.h"; sourceTree = "<group>"; };
+		D885DCB5122617BD00F31913 /* CGPath+NDVCurveFitAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CGPath+NDVCurveFitAdditions.mm"; sourceTree = "<group>"; };
 		D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVMemoryMangementMacros.h; sourceTree = "<group>"; };
 		D885DD301226280F00F31913 /* NDVShadowedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVShadowedTableView.h; sourceTree = "<group>"; };
 		D885DD311226280F00F31913 /* NDVShadowedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDVShadowedTableView.m; sourceTree = "<group>"; };
@@ -286,8 +312,14 @@
 				D885DBF712260B7A00F31913 /* CGGeometry+NDVAdditions.m */,
 				D885DB3D12254F3000F31913 /* CGImage+NDVAdditions.c */,
 				D885DB3C12254F3000F31913 /* CGImage+NDVAdditions.h */,
-				D885DCB4122617BD00F31913 /* CGPath+NDVAdditions.h */,
-				D885DCB5122617BD00F31913 /* CGPath+NDVAdditions.mm */,
+				D885DCB4122617BD00F31913 /* CGPath+NDVCurveFitAdditions.h */,
+				D885DCB5122617BD00F31913 /* CGPath+NDVCurveFitAdditions.mm */,
+				D80F1474127551F200136506 /* CGPath+NDVDebuggingAdditions.h */,
+				D80F1475127551F200136506 /* CGPath+NDVDebuggingAdditions.m */,
+				D80F14A71275672600136506 /* CGPath+NDVSVGAdditions.h */,
+				D80F14A81275672600136506 /* CGPath+NDVSVGAdditions.m.rl */,
+				D80F147E1275541700136506 /* NDVCGPathBuilder.h */,
+				D80F147F1275541700136506 /* NDVCGPathBuilder.m */,
 			);
 			name = CoreGraphics;
 			sourceTree = "<group>";
@@ -387,6 +419,9 @@
 				D819A5F6123F388E002150E2 /* zip.h in Headers */,
 				D819A611123F3CD0002150E2 /* NDVZipArchive.h in Headers */,
 				D8728572124C6D2F00C82359 /* NDVAccessorMacros.h in Headers */,
+				D80F1476127551F200136506 /* CGPath+NDVDebuggingAdditions.h in Headers */,
+				D80F14801275541700136506 /* NDVCGPathBuilder.h in Headers */,
+				D80F14A91275672600136506 /* CGPath+NDVSVGAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +437,7 @@
 				D2AAC07C0554694100DB518D /* Frameworks */,
 			);
 			buildRules = (
+				D80F14B512756A1A00136506 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -462,6 +498,9 @@
 				D819A5F3123F388E002150E2 /* unzip.c in Sources */,
 				D819A5F5123F388E002150E2 /* zip.c in Sources */,
 				D819A612123F3CD0002150E2 /* NDVZipArchive.m in Sources */,
+				D80F1477127551F200136506 /* CGPath+NDVDebuggingAdditions.m in Sources */,
+				D80F14811275541700136506 /* NDVCGPathBuilder.m in Sources */,
+				D80F14AA1275672600136506 /* CGPath+NDVSVGAdditions.m.rl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

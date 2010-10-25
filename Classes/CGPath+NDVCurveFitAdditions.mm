@@ -1,12 +1,12 @@
 //
-//  CGPath+NDVAdditions.mm
+//  CGPath+NDVCurveFitAdditions.mm
 //  NDVKit
 //
 //  Created by Nathan de Vries on 26/08/10.
 //  Copyright 2010 Nathan de Vries. All rights reserved.
 //
 
-#import "CGPath+NDVAdditions.h"
+#import "CGPath+NDVCurveFitAdditions.h"
 #import "bezier-utils.h"
 
 
