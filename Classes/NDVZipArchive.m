@@ -23,7 +23,7 @@
 	BOOL overallSuccess = YES;
   int returnCode;
 
-	returnCode = unzGoToFirstFile(self.unzipFile);
+	unzGoToFirstFile(self.unzipFile);
 	unsigned char	buffer[4096] = {0};
 	NSFileManager* fileManager = [NSFileManager defaultManager];
 
