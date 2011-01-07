@@ -17,7 +17,7 @@
 PRODUCT_NAME = NDVKit
 
 
-SDKROOT                    = iphoneos4.1
+SDKROOT                    = iphoneos
 IPHONEOS_DEPLOYMENT_TARGET = 3.0
 
 
@@ -27,7 +27,6 @@ INSTALL_PATH = /usr/local/lib
 
 
 OTHER_LDFLAGS = -ObjC -all_load -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore
-OTHER_CFLAGS = -D__IPHONE_OS_VERSION_MIN_REQUIRED=030000
 
 
 ALWAYS_SEARCH_USER_PATHS = NO

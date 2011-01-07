@@ -56,7 +56,6 @@
 		D885DC2512260E1B00F31913 /* NSArray+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DC2312260E1B00F31913 /* NSArray+NDVAdditions.m */; };
 		D885DC431226128700F31913 /* NSData+NDVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DC411226128700F31913 /* NSData+NDVAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885DC441226128700F31913 /* NSData+NDVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DC421226128700F31913 /* NSData+NDVAdditions.m */; };
-		D885DCF112261C8600F31913 /* NDVMemoryMangementMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885DD321226280F00F31913 /* NDVShadowedTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D885DD301226280F00F31913 /* NDVShadowedTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D885DD331226280F00F31913 /* NDVShadowedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D885DD311226280F00F31913 /* NDVShadowedTableView.m */; };
 		D894A99A1238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D894A9981238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -155,7 +154,6 @@
 		D885DC9E1226175500F31913 /* translate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = translate.h; path = "Dependencies/inkscsape-curvefit/translate.h"; sourceTree = SOURCE_ROOT; };
 		D885DCB4122617BD00F31913 /* CGPath+NDVCurveFitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPath+NDVCurveFitAdditions.h"; sourceTree = "<group>"; };
 		D885DCB5122617BD00F31913 /* CGPath+NDVCurveFitAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CGPath+NDVCurveFitAdditions.mm"; sourceTree = "<group>"; };
-		D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVMemoryMangementMacros.h; sourceTree = "<group>"; };
 		D885DD301226280F00F31913 /* NDVShadowedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDVShadowedTableView.h; sourceTree = "<group>"; };
 		D885DD311226280F00F31913 /* NDVShadowedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDVShadowedTableView.m; sourceTree = "<group>"; };
 		D894A9981238C43E005941FA /* NSString+NDVTypeEncodingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NDVTypeEncodingAdditions.h"; sourceTree = "<group>"; };
@@ -331,7 +329,6 @@
 				D885DA731225014300F31913 /* NDVKVOMacros.h */,
 				D885DBBE1226073400F31913 /* NDVMathMacros.h */,
 				D885DA6F1224FE9600F31913 /* NDVSynthesizeSingletonMacro.h */,
-				D885DCF012261C8600F31913 /* NDVMemoryMangementMacros.h */,
 				D819A60F123F3CD0002150E2 /* NDVZipArchive.h */,
 				D819A610123F3CD0002150E2 /* NDVZipArchive.m */,
 				D8728571124C6D2F00C82359 /* NDVAccessorMacros.h */,
@@ -406,7 +403,6 @@
 				D885DBF812260B7A00F31913 /* CGGeometry+NDVAdditions.h in Headers */,
 				D885DC2412260E1B00F31913 /* NSArray+NDVAdditions.h in Headers */,
 				D885DC431226128700F31913 /* NSData+NDVAdditions.h in Headers */,
-				D885DCF112261C8600F31913 /* NDVMemoryMangementMacros.h in Headers */,
 				D885DD321226280F00F31913 /* NDVShadowedTableView.h in Headers */,
 				D897302D1237284800DFB1E9 /* UIImage+NDVScalingAdditions.h in Headers */,
 				D89730351237295600DFB1E9 /* UIImage+NDVStretchAdditions.h in Headers */,
@@ -511,7 +507,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D885D94C1224EE6300F31913 /* Build-Debug.xcconfig */;
 			buildSettings = {
-				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};

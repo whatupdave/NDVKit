@@ -105,9 +105,9 @@ static const CGFloat kShadowFadeUpHeight = 10.0f;
 
 
 - (void)dealloc {
-  RELEASE_AND_SET_TO_NIL(_originShadow,
-                         _topShadow,
-                         _bottomShadow);
+  [_originShadow release];
+  [_topShadow release];
+  [_bottomShadow release];
 
   [super dealloc];
 }
