@@ -16,7 +16,7 @@
 @interface NDVZipArchive : NSObject {
     
     zipFile _zipFile;
-    unzFile	_unzipFile;
+    unzFile _unzipFile;
     
 }
 
