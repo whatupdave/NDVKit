@@ -13,6 +13,89 @@
 @implementation NDVZipArchive
 
 
+- (id)init {
+	if((self = [super init])) {
+		_zipFile = NULL ;
+        _unzipFile = NULL;
+	}
+	return self;
+}
+
+
+# pragma mark -
+# pragma mark Zipping (a.k.a. winning)
+
+
+- (BOOL)createZipFileWithPath:(NSString *)zipFilePath {
+    _zipFile = zipOpen( (const char*)[zipFilePath UTF8String], 0 );
+    return (_zipFile != NULL);
+}
+
+
+- (BOOL)addFileToZipFileWithPath:(NSString *)filePath
+                   nameInZipFile:(NSString *)nameInZipFile {
+    
+	if (_zipFile == NULL) return NO;
+	
+	zip_fileinfo zipInfo;
+    memset(&zipInfo, 0, sizeof(zip_fileinfo));
+    
+	zipInfo.dosDate = [[NSDate date] timeIntervalSinceDate:[NSDate dateWithYear:1980]];
+	
+	NSError* error = NULL;
+	NSDictionary* fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:filePath
+                                                                                    error:&error];
+    
+    if (fileAttributes) {
+        NSDate* fileModificationDate = (NSDate *)[fileAttributes objectForKey:NSFileModificationDate];
+        zipInfo.dosDate = [fileModificationDate timeIntervalSinceDate:[NSDate dateWithYear:1980]];
+        
+    } else {
+        return NO;
+    }
+	
+    int returnCode;
+    
+    returnCode = zipOpenNewFileInZip( _zipFile,
+                                     (const char*) [nameInZipFile UTF8String],
+                                     &zipInfo,
+                                     NULL, 0,
+                                     NULL, 0,
+                                     NULL,
+                                     Z_DEFLATED,
+                                     Z_DEFAULT_COMPRESSION);
+    
+	if (returnCode != Z_OK) return NO;
+    
+    
+    NSData* fileData = [NSData dataWithContentsOfFile:filePath];
+	returnCode = zipWriteInFileInZip(_zipFile, (const void*)[fileData bytes], [fileData length]);
+    
+	if (returnCode != Z_OK) return NO;
+    
+    
+	returnCode = zipCloseFileInZip(_zipFile);
+	if (returnCode != Z_OK) return NO;
+    
+    
+	return YES;
+}
+
+
+- (BOOL)closeZipFile {
+	if (_zipFile == NULL) return NO;
+    
+    int returnCode = zipClose(_zipFile, NULL);
+    _zipFile = NULL;
+    
+    return (returnCode == Z_OK);
+}
+
+
+# pragma mark -
+# pragma mark Unzipping
+
+
 - (BOOL)openUnzipFileWithPath:(NSString *)zipFilePath {
 	self.unzipFile = unzOpen((const char *)[zipFilePath UTF8String]);
   return (self.unzipFile != NULL);
@@ -129,6 +212,7 @@
 }
 
 
+@synthesize zipFile=_zipFile;
 @synthesize unzipFile=_unzipFile;
 
 
