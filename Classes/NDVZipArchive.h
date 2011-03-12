@@ -7,22 +7,33 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#import "zip.h"
 #import "unzip.h"
 
 
+
 @interface NDVZipArchive : NSObject {
-
-  unzFile	_unzipFile;
-
+    
+    zipFile _zipFile;
+    unzFile	_unzipFile;
+    
 }
+
+
++ (BOOL)zipAllFilesAtPath:(NSString *)filePath
+          toZipFileAtPath:(NSString *)zipFilePath;
+
+
+- (BOOL)createZipFileWithPath:(NSString *)zipFilePath;
+- (BOOL)addFileToZipFileWithPath:(NSString *)filePath 
+                   nameInZipFile:(NSString *)nameInZipFile;
+- (BOOL)closeZipFile;
 
 
 - (BOOL)openUnzipFileWithPath:(NSString *)zipFilePath;
 - (BOOL)unzipFileToPath:(NSString *)path overWrite:(BOOL)overwrite;
 - (BOOL)closeUnzipFile;
-
-
-@property (assign) unzFile unzipFile;
 
 
 @end
