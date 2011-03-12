@@ -7,3 +7,5 @@ profile
 *.mode2v3
 *.perspective
 *.perspectivev3
+*.xcworkspace/
+xcuserdata/
