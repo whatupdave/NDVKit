@@ -26,9 +26,16 @@
     
     NSString* relativeFilePath;
     while ((relativeFilePath = [directoryEnumerator nextObject])) {
-        BOOL isAdded = [zipArchive addFileToZipFileWithPath:[filePath stringByAppendingPathComponent:relativeFilePath]
-                                              nameInZipFile:relativeFilePath];
-        if (!isAdded) return NO;
+        NSString* fullPath = [filePath stringByAppendingPathComponent:relativeFilePath];
+        
+        BOOL isDirectory;
+        if ([fileManager fileExistsAtPath:fullPath isDirectory:&isDirectory]) {
+            if (isDirectory == NO) {
+                BOOL isAdded = [zipArchive addFileToZipFileWithPath:fullPath
+                                                      nameInZipFile:relativeFilePath];
+                if (!isAdded) return NO;
+            }
+        }
     }
     
     BOOL isClosed = [zipArchive closeZipFile];
@@ -72,7 +79,9 @@
 	zip_fileinfo zipInfo;
     memset(&zipInfo, 0, sizeof(zip_fileinfo));
     
-	zipInfo.dosDate = [[NSDate date] timeIntervalSinceDate:[NSDate dateWithYear:1980]];
+    NSDate* dosReferenceDate = [NSDate dateWithYear:1980];
+    
+	zipInfo.dosDate = [[NSDate date] timeIntervalSinceDate:dosReferenceDate];
 	
 	NSError* error = NULL;
 	NSDictionary* fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:filePath
@@ -80,12 +89,13 @@
     
     if (fileAttributes) {
         NSDate* fileModificationDate = (NSDate *)[fileAttributes objectForKey:NSFileModificationDate];
-        zipInfo.dosDate = [fileModificationDate timeIntervalSinceDate:[NSDate dateWithYear:1980]];
+        zipInfo.dosDate = [fileModificationDate timeIntervalSinceDate:dosReferenceDate];
         
     } else {
         return NO;
     }
 	
+    
     int returnCode;
     
     returnCode = zipOpenNewFileInZip( _zipFile,
@@ -96,13 +106,11 @@
                                      NULL,
                                      Z_DEFLATED,
                                      Z_DEFAULT_COMPRESSION);
-    
 	if (returnCode != Z_OK) return NO;
     
     
     NSData* fileData = [NSData dataWithContentsOfFile:filePath];
 	returnCode = zipWriteInFileInZip(_zipFile, (const void*)[fileData bytes], [fileData length]);
-    
 	if (returnCode != Z_OK) return NO;
     
     
