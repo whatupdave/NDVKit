@@ -22,7 +22,7 @@ for (NSString* property in [NSArray arrayWithObjects:__VA_ARGS__, nil]) { \
 #define SYNTHESIZE_PROPERTY_CHANGE_OBSERVER() \
 \
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context { \
-  if (context != NDVPropertyChangeObserverContext) return [super observeValueForKeyPath:keyPath ofObject:object change:change context:context]; \
+  if (context != &NDVPropertyChangeObserverContext) return [super observeValueForKeyPath:keyPath ofObject:object change:change context:context]; \
 \
   if ([[change valueForKey:NSKeyValueChangeKindKey] integerValue] == NSKeyValueChangeSetting) { \
     SEL changeSelector = NSSelectorFromString([keyPath stringByAppendingString:@"DidChange"]); \
