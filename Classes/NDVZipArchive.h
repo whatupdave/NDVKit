@@ -25,6 +25,11 @@
           toZipFileAtPath:(NSString *)zipFilePath;
 
 
++ (BOOL)unzipFileAtPath:(NSString *)zipFilePath
+                 toPath:(NSString *)path
+              overWrite:(BOOL)overWrite;
+
+
 - (BOOL)createZipFileWithPath:(NSString *)zipFilePath;
 - (BOOL)addFileToZipFileWithPath:(NSString *)filePath 
                    nameInZipFile:(NSString *)nameInZipFile;

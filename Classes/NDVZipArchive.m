@@ -44,6 +44,26 @@
 }
 
 
++ (BOOL)unzipFileAtPath:(NSString *)zipFilePath
+                 toPath:(NSString *)path
+              overWrite:(BOOL)overWrite {
+    
+    BOOL success;
+    
+    NDVZipArchive* zipArchive = [[[NDVZipArchive alloc] init] autorelease];
+    success = [zipArchive openUnzipFileWithPath:zipFilePath];
+    if (!success) return success;
+    
+    success = [zipArchive unzipFileToPath:path overWrite:overWrite];
+    if (!success) return success;
+    
+    success = [zipArchive closeUnzipFile];
+    if (!success) return success;
+    
+    return YES;
+}
+
+
 - (id)init {
 	if ((self = [super init])) {
 		_zipFile = NULL ;
