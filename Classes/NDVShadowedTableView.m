@@ -1,12 +1,12 @@
-//
-//  NDVShadowedTableView.m
-//  NDVKit
-//
-//  Created by Nathan de Vries on 13/10/09.
-//  Copyright 2009 Matt Gallagher. All rights reserved.
-//
-//  Modifications copyright 2009 Nathan de Vries.
-//
+/*
+ * NDVShadowedTableView.m
+ *
+ * Created by Nathan de Vries on 13/10/09.
+ * Copyright 2009 Matt Gallagher. All rights reserved.
+ *
+ * Modifications copyright 2009 Nathan de Vries.
+ */
+
 
 #import "NDVShadowedTableView.h"
 #import "NDVKit.h"
